@@ -1,0 +1,89 @@
+{
+  "templateName": "edge_basic",
+  "templateDescription": "Do not modify!",
+  "deviceType": "vedge-C8000V",
+  "deviceRole": "sdwan-edge",
+  "configType": "template",
+  "factoryDefault": false,
+  "policyId": "",
+  "featureTemplateUidRange": [],
+  "draftMode": false,
+  "connectionPreferenceRequired": true,
+  "connectionPreference": true,
+  "generalTemplates": [
+    {
+      "templateId": "9476a32c-7204-4537-aed5-9fd8a748e4ea",
+      "templateType": "cedge_aaa"
+    },
+    {
+      "templateId": "9470dc83-e2b6-4d90-95e6-3ed373005592",
+      "templateType": "cisco_bfd"
+    },
+    {
+      "templateId": "460bf911-7e7c-4446-bf47-22663a2836b0",
+      "templateType": "cisco_omp"
+    },
+    {
+      "templateId": "eef43d52-250b-479d-bd07-1abc1bb7067b",
+      "templateType": "cisco_security"
+    },
+    {
+      "templateId": "68463028-b9c5-4e63-a14d-51422b03cc3f",
+      "templateType": "cisco_system",
+      "subTemplates": [
+        {
+          "templateId": "eb80254f-419e-45c4-a4cf-3aa926f4e73a",
+          "templateType": "cisco_logging"
+        }
+      ]
+    },
+    {
+      "templateId": "18239c95-5d89-43bc-baa1-3f8332c6da87",
+      "templateType": "cisco_vpn",
+      "subTemplates": [
+        {
+          "templateId": "3eac527a-4cbf-4a5f-9aa5-ef93dab1ce1c",
+          "templateType": "cisco_vpn_interface"
+        },
+        {
+          "templateId": "41acb1df-d71b-4e9e-9a4f-37b6599d9e54",
+          "templateType": "cisco_vpn_interface"
+        }
+      ]
+    },
+    {
+      "templateId": "d2447a3f-c868-4189-b950-d2f2bbe892a6",
+      "templateType": "cisco_vpn"
+    },
+    {
+      "templateId": "3ec19011-ea81-4d2c-b4d8-7b39b0066d67",
+      "templateType": "cisco_vpn",
+      "subTemplates": [
+        {
+          "templateId": "c006eecf-2768-4c48-927d-2c6917a041f5",
+          "templateType": "cisco_vpn_interface",
+          "subTemplates": [
+            {
+              "templateId": "7d066096-7906-4a2a-ba81-5c51454aa3eb",
+              "templateType": "cisco_dhcp_server"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "ca4d91c3-8bb5-4c28-b325-523cb6037cc8",
+      "templateType": "cedge_global"
+    },
+    {
+      "templateId": "f8c110bf-fa97-49f0-9e17-d5cffe7d2cf2",
+      "templateType": "cisco_banner"
+    },
+    {
+      "templateId": "ab530c55-7bac-4fb0-8619-a5555eaf93cd",
+      "templateType": "cli-template"
+    }
+  ],
+  "templateClass": "cedge",
+  "templateId": "2c340d3f-d1cf-4082-9fa2-c58370bfbcc0"
+}

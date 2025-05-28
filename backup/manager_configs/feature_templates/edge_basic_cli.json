@@ -1,0 +1,36 @@
+{
+  "templateMinVersion": "15.0.0",
+  "templateType": "cli-template",
+  "deviceType": [
+    "vedge-C8000V"
+  ],
+  "lastUpdatedBy": "sdwan",
+  "editedTemplateDefinition": {
+    "config": {
+      "vipObjectType": "object",
+      "vipType": "constant",
+      "vipValue": "platform console serial"
+    }
+  },
+  "gTemplateClass": "cedge",
+  "templateDefinition": {
+    "config": {
+      "vipObjectType": "object",
+      "vipType": "constant",
+      "vipValue": "platform console serial"
+    }
+  },
+  "configType": "xml",
+  "attachedMastersCount": 1,
+  "templateId": "ab530c55-7bac-4fb0-8619-a5555eaf93cd",
+  "createdOn": 1748399282878,
+  "@rid": 2700,
+  "factoryDefault": false,
+  "feature": "vmanage-default",
+  "templateName": "edge_basic_cli",
+  "createdBy": "sdwan",
+  "devicesAttached": 0,
+  "templateDescription": "Do not modify!",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399282878
+}

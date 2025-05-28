@@ -1,0 +1,19 @@
+{
+  "listId": "5f29bafe-60a0-425e-a906-4470b51284ec",
+  "name": "Browsing",
+  "type": "localApp",
+  "description": "Local App List for Browsing",
+  "entries": [
+    {
+      "app": "netflix"
+    }
+  ],
+  "lastUpdated": 1748399119556,
+  "owner": "system",
+  "readOnly": true,
+  "version": "1.0",
+  "infoTag": "",
+  "referenceCount": 0,
+  "references": [],
+  "isActivatedByVsmart": false
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "listId": "5f29bafe-60a0-425e-a906-4470b51284ec",
+    "name": "Browsing",
+    "type": "localApp",
+    "description": "Local App List for Browsing",
+    "entries": [
+      {
+        "app": "netflix"
+      }
+    ],
+    "lastUpdated": 1748399119556,
+    "owner": "system",
+    "readOnly": true,
+    "version": "1.0",
+    "infoTag": "",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "7644c8dd-94a6-426c-893e-b3cd22daabbe",
+    "name": "ICMP",
+    "type": "localApp",
+    "description": "Local App List for ICMP",
+    "entries": [
+      {
+        "app": "icmp"
+      }
+    ],
+    "lastUpdated": 1748399120954,
+    "owner": "system",
+    "readOnly": true,
+    "version": "1.0",
+    "infoTag": "",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "e90934b6-8d8f-472a-9776-45af9c680057",
+    "name": "Yahoo",
+    "type": "localApp",
+    "description": "Local App List for Yahoo",
+    "entries": [
+      {
+        "app": "yahoo"
+      },
+      {
+        "app": "yahoo-messenger-video"
+      }
+    ],
+    "lastUpdated": 1748399119734,
+    "owner": "system",
+    "readOnly": true,
+    "version": "1.0",
+    "infoTag": "",
+    "referenceCount": 0,
+    "references": []
+  }
+]

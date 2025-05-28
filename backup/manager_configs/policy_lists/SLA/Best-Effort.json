@@ -1,0 +1,21 @@
+{
+  "listId": "9200bf91-ee86-4432-be00-33196379e06c",
+  "name": "Best-Effort",
+  "type": "sla",
+  "description": "Best Effort SLA",
+  "entries": [
+    {
+      "jitter": "500",
+      "latency": "500",
+      "loss": "5"
+    }
+  ],
+  "lastUpdated": 1748399120891,
+  "owner": "system",
+  "readOnly": true,
+  "version": "2.0",
+  "infoTag": "",
+  "referenceCount": 0,
+  "references": [],
+  "isActivatedByVsmart": false
+}

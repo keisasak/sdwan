@@ -1,0 +1,85 @@
+{
+  "id": "c556adab-0d2e-4893-9015-bfe120d697df",
+  "name": "edge_basic",
+  "description": "Do not modify!",
+  "source": null,
+  "solution": "sdwan",
+  "lastUpdatedBy": "sdwan",
+  "lastUpdatedOn": 1748399353740,
+  "createdBy": null,
+  "createdOn": null,
+  "profiles": [
+    {
+      "id": "c955b34e-57cb-4a82-a2ea-7dacbaf94d80",
+      "name": "Default_Policy_Object_Profile",
+      "solution": "sdwan",
+      "type": "policy-object",
+      "description": null,
+      "lastUpdatedBy": "system",
+      "lastUpdatedOn": 1748399076318,
+      "createdBy": "system",
+      "createdOn": 1748399060127,
+      "profileParcelCount": 25
+    },
+    {
+      "id": "66de75dd-1afc-48cc-b18a-45ffd1f3cdf5",
+      "name": "edge_basic_system",
+      "solution": "sdwan",
+      "type": "system",
+      "description": null,
+      "lastUpdatedBy": "sdwan",
+      "lastUpdatedOn": 1748399356609,
+      "createdBy": "sdwan",
+      "createdOn": 1748399294024,
+      "profileParcelCount": 6
+    },
+    {
+      "id": "5935159d-ff9c-4198-9397-d8b690bdf5e3",
+      "name": "edge_basic_wan",
+      "solution": "sdwan",
+      "type": "transport",
+      "description": null,
+      "lastUpdatedBy": "sdwan",
+      "lastUpdatedOn": 1748399292249,
+      "createdBy": "sdwan",
+      "createdOn": 1748399290615,
+      "profileParcelCount": 3
+    },
+    {
+      "id": "1652e171-73a1-4445-a16b-eaa41295908f",
+      "name": "edge_basic_lan",
+      "solution": "sdwan",
+      "type": "service",
+      "description": null,
+      "lastUpdatedBy": "sdwan",
+      "lastUpdatedOn": 1748399293933,
+      "createdBy": "sdwan",
+      "createdOn": 1748399292336,
+      "profileParcelCount": 3
+    },
+    {
+      "id": "a1183ba1-5180-42e6-af31-ad9a0b5c3322",
+      "name": "edge_basic_cli",
+      "solution": "sdwan",
+      "type": "cli",
+      "description": null,
+      "lastUpdatedBy": "sdwan",
+      "lastUpdatedOn": 1748399290499,
+      "createdBy": "sdwan",
+      "createdOn": 1748399289740,
+      "profileParcelCount": 1
+    }
+  ],
+  "version": 2,
+  "state": null,
+  "devices": [
+    "C8K-3D1A8960-6E76-532C-DA93-50626FC5797E",
+    "C8K-D4CE7174-5261-7E6F-91EA-4926BCF4C2DD",
+    "C8K-27148AFE-7160-69D3-ACC5-F77560530D63"
+  ],
+  "numberOfDevices": 3,
+  "numberOfDevicesUpToDate": 3,
+  "origin": null,
+  "topology": null,
+  "fullConfigCli": false
+}

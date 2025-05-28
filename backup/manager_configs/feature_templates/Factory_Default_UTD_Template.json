@@ -1,0 +1,194 @@
+{
+  "templateType": "virtual-application-utd",
+  "templateMinVersion": "15.0.0",
+  "deviceType": [
+    "vedge-C8200-1N-4T",
+    "vedge-C1121X-8P",
+    "vedge-C8300-2N2S-6T",
+    "vedge-C1127-8PMLTEP",
+    "vedge-ISR-4331",
+    "vedge-ISR-4221X",
+    "vedge-ISR-4351-SD-ROUTING",
+    "vedge-ISRv",
+    "vedge-ISR-4321-SD-ROUTING",
+    "vedge-ISR-4331-SD-ROUTING",
+    "vedge-C1127X-8PMLTEP",
+    "vedge-CSR-1000v",
+    "vedge-ISR-4451-X",
+    "vedge-C8300-1N1S-4T2X-SD-ROUTING",
+    "vedge-C8300-2N2S-6T-SD-ROUTING",
+    "vedge-ISR-4221X-SD-ROUTING",
+    "vedge-C8200L-1N-4T",
+    "vedge-C1121X-8PLTEPW",
+    "vedge-C1121X-8PLTEPWB",
+    "vedge-C1127X-8PLTEP",
+    "vedge-C1121X-8PLTEPWA",
+    "vedge-ISR-4321",
+    "vedge-C1121X-8PLTEPWE",
+    "vedge-C1161X-8P",
+    "vedge-C8500L-8S4X",
+    "vedge-C8200L-1N-4T-SD-ROUTING",
+    "vedge-C1161X-8PLTEP",
+    "vedge-ISR1100X-4G-XE",
+    "vedge-C8300-1N1S-6T-SD-ROUTING",
+    "vedge-C8300-2N2S-4T2X-SD-ROUTING",
+    "vedge-C1121X-8PLTEP",
+    "vedge-IR-1835",
+    "vedge-C1131X-8PW",
+    "vedge-C8300-1N1S-4T2X",
+    "vedge-ISR-4461-SD-ROUTING",
+    "vedge-ISR1100X-6G-XE",
+    "vedge-ISR-4351",
+    "vedge-ISR-4431",
+    "vedge-C1121X-8PLTEPWZ",
+    "vedge-ISR-4431-SD-ROUTING",
+    "vedge-ISR-4451-X-SD-ROUTING",
+    "vedge-ISR-4221-SD-ROUTING",
+    "vedge-C8300-1N1S-6T",
+    "vedge-C8200-1N-4T-SD-ROUTING",
+    "vedge-IR-8340",
+    "vedge-C8300-2N2S-4T2X",
+    "vedge-C1131X-8PLTEPW",
+    "vedge-ISR-4461",
+    "vedge-ISR-4221",
+    "vedge-C1111X-8P",
+    "vedge-C1126X-8PLTEP",
+    "vedge-C8000V",
+    "vedge-C8000V-SD-ROUTING"
+  ],
+  "lastUpdatedBy": "system",
+  "editedTemplateDefinition": {
+    "virtual-application": {
+      "vipType": "constant",
+      "vipValue": [
+        {
+          "instance-id": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "1",
+            "vipVariableName": "instance_id"
+          },
+          "application-type": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "utd",
+            "vipVariableName": "application_type"
+          },
+          "utd": {
+            "nat": {
+              "vipObjectType": "object",
+              "vipType": "constant",
+              "vipValue": "true",
+              "vipVariableName": "nat"
+            },
+            "database-url": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipValue": "false",
+              "vipVariableName": "database_url"
+            },
+            "resource-profile": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipValue": "low",
+              "vipVariableName": "resource_profile"
+            },
+            "service-gateway-ip": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipVariableName": "service_gateway_ip"
+            },
+            "service-ip": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipVariableName": "service_ip"
+            }
+          },
+          "priority-order": [
+            "instance-id",
+            "application-type",
+            "utd"
+          ]
+        }
+      ],
+      "vipObjectType": "tree",
+      "vipPrimaryKey": [
+        "instance-id"
+      ]
+    }
+  },
+  "gTemplateClass": "cedge",
+  "templateDefinition": {
+    "virtual-application": {
+      "vipType": "constant",
+      "vipValue": [
+        {
+          "instance-id": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "1",
+            "vipVariableName": "instance_id"
+          },
+          "application-type": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "utd",
+            "vipVariableName": "application_type"
+          },
+          "utd": {
+            "nat": {
+              "vipObjectType": "object",
+              "vipType": "constant",
+              "vipValue": "true",
+              "vipVariableName": "nat"
+            },
+            "database-url": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipValue": "false",
+              "vipVariableName": "database_url"
+            },
+            "resource-profile": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipValue": "low",
+              "vipVariableName": "resource_profile"
+            },
+            "service-gateway-ip": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipVariableName": "service_gateway_ip"
+            },
+            "service-ip": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipVariableName": "service_ip"
+            }
+          },
+          "priority-order": [
+            "instance-id",
+            "application-type",
+            "utd"
+          ]
+        }
+      ],
+      "vipObjectType": "tree",
+      "vipPrimaryKey": [
+        "instance-id"
+      ]
+    }
+  },
+  "attachedMastersCount": 0,
+  "configType": "xml",
+  "templateId": "17533f02-ff6d-4048-a423-708a2e141a21",
+  "createdOn": 1748399098180,
+  "@rid": 2391,
+  "factoryDefault": true,
+  "feature": "vmanage-default",
+  "createdBy": "system",
+  "templateName": "Factory_Default_UTD_Template",
+  "devicesAttached": 0,
+  "templateDescription": "Default UTD template settings",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399098180
+}

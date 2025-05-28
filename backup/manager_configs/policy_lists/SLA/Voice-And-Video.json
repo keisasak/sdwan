@@ -1,0 +1,21 @@
+{
+  "listId": "70d5ff35-72e7-4592-a384-b4521404f0ea",
+  "name": "Voice-And-Video",
+  "type": "sla",
+  "description": "ACI Voice And Video SLA",
+  "entries": [
+    {
+      "jitter": "30",
+      "latency": "45",
+      "loss": "2"
+    }
+  ],
+  "lastUpdated": 1748399120477,
+  "owner": "system",
+  "readOnly": true,
+  "version": "2.0",
+  "infoTag": "aci",
+  "referenceCount": 0,
+  "references": [],
+  "isActivatedByVsmart": false
+}

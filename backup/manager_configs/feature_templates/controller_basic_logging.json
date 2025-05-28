@@ -1,0 +1,74 @@
+{
+  "templateType": "logging",
+  "deviceType": [
+    "vsmart"
+  ],
+  "templateMinVersion": "20.1.0",
+  "lastUpdatedBy": "sdwan",
+  "editedTemplateDefinition": {
+    "disk": {
+      "enable": {
+        "vipObjectType": "object",
+        "vipValue": "true",
+        "vipType": "ignore"
+      },
+      "file": {
+        "size": {
+          "vipObjectType": "object",
+          "vipValue": 10,
+          "vipType": "ignore"
+        },
+        "rotate": {
+          "vipObjectType": "object",
+          "vipValue": 10,
+          "vipType": "ignore"
+        }
+      },
+      "priority": {
+        "vipObjectType": "object",
+        "vipValue": "information",
+        "vipType": "ignore"
+      }
+    }
+  },
+  "gTemplateClass": "vedge",
+  "templateDefinition": {
+    "disk": {
+      "enable": {
+        "vipObjectType": "object",
+        "vipValue": "true",
+        "vipType": "ignore"
+      },
+      "file": {
+        "size": {
+          "vipObjectType": "object",
+          "vipValue": 10,
+          "vipType": "ignore"
+        },
+        "rotate": {
+          "vipObjectType": "object",
+          "vipValue": 10,
+          "vipType": "ignore"
+        }
+      },
+      "priority": {
+        "vipObjectType": "object",
+        "vipValue": "information",
+        "vipType": "ignore"
+      }
+    }
+  },
+  "configType": "xml",
+  "attachedMastersCount": 1,
+  "templateId": "0a7afcae-ede9-404b-83c0-d15996577e4b",
+  "createdOn": 1748399286137,
+  "@rid": 2711,
+  "factoryDefault": false,
+  "feature": "vmanage-default",
+  "createdBy": "sdwan",
+  "templateName": "controller_basic_logging",
+  "devicesAttached": 1,
+  "templateDescription": "Do not modify!",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399286137
+}

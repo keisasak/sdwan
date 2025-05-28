@@ -1,0 +1,88 @@
+{
+  "templateMinVersion": "20.1.0",
+  "templateType": "logging",
+  "deviceType": [
+    "vedge-1000",
+    "vedge-2000",
+    "vedge-cloud",
+    "vedge-5000",
+    "vedge-ISR1100-6G",
+    "vedge-100-B",
+    "vedge-ISR1100-4G",
+    "vedge-100",
+    "vsmart",
+    "vedge-ISR1100-4GLTE",
+    "vedge-100-WM",
+    "vmanage",
+    "vedge-100-M",
+    "vedge-ISR1100X-6G",
+    "vedge-ISR1100X-4G"
+  ],
+  "lastUpdatedBy": "system",
+  "editedTemplateDefinition": {
+    "disk": {
+      "enable": {
+        "vipObjectType": "object",
+        "vipValue": "true",
+        "vipType": "ignore"
+      },
+      "file": {
+        "size": {
+          "vipObjectType": "object",
+          "vipValue": 10,
+          "vipType": "ignore"
+        },
+        "rotate": {
+          "vipObjectType": "object",
+          "vipValue": 10,
+          "vipType": "ignore"
+        }
+      },
+      "priority": {
+        "vipObjectType": "object",
+        "vipValue": "information",
+        "vipType": "ignore"
+      }
+    }
+  },
+  "gTemplateClass": "vedge",
+  "templateDefinition": {
+    "disk": {
+      "enable": {
+        "vipObjectType": "object",
+        "vipValue": "true",
+        "vipType": "ignore"
+      },
+      "file": {
+        "size": {
+          "vipObjectType": "object",
+          "vipValue": 10,
+          "vipType": "ignore"
+        },
+        "rotate": {
+          "vipObjectType": "object",
+          "vipValue": 10,
+          "vipType": "ignore"
+        }
+      },
+      "priority": {
+        "vipObjectType": "object",
+        "vipValue": "information",
+        "vipType": "ignore"
+      }
+    }
+  },
+  "attachedMastersCount": 0,
+  "configType": "xml",
+  "templateId": "7476d45c-d776-4385-b734-d72bebacb161",
+  "createdOn": 1748399079443,
+  "@rid": 1340,
+  "factoryDefault": true,
+  "feature": "vmanage-default",
+  "createdBy": "system",
+  "templateName": "Factory_Default_Logging_Template_V01",
+  "devicesAttached": 0,
+  "templateDescription": "Default Logging template settings Version 01",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399079443
+}

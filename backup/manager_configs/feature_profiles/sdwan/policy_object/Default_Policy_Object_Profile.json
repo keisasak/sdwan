@@ -1,0 +1,1983 @@
+{
+  "profileName": "Default_Policy_Object_Profile",
+  "lastUpdatedBy": "system",
+  "description": "Default profile for Policy-Objects",
+  "profileParcelCount": 25,
+  "createdOn": 1748399060127,
+  "@rid": 109,
+  "profileType": "policy-object",
+  "solution": "sdwan",
+  "createdBy": "system",
+  "profileId": "c955b34e-57cb-4a82-a2ea-7dacbaf94d80",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399076318,
+  "associatedProfileParcels": [
+    {
+      "parcelId": "4d3d8781-a193-41f9-9a6f-0192f589602d",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "box_net_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "box"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "c54ec4fa-bdda-4b9e-a404-11e75f99f023",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "REAL_TIME_APPS",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "sip"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rtp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "skinny"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "a0bbb321-8f80-48a6-a132-234aefd98e85",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "sugar_crm_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "sugarcrm"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "7313c683-bd63-4854-a611-580a88263172",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "Google_Apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "android-updates"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "blogger"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "chrome_update"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gcs"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail_basic"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail_chat"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail_drive"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail_mobile"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-services"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-services-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-services-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-services-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-accounts"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_accounts"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_ads"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_analytics"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_appengine"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_cache"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_calendar"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_code"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_desktop"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_docs"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-docs"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-downloads"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_earth"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-earth"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_groups"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_maps"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_photos"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_picasa"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "picasa"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-photos"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-play"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_plus"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-plus"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_safebrowsing"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_skymap"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_spaces"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_tags"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_toolbar"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_translate"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_trusted_store"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_weblight"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "googlebot"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gstatic"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gtalk"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gtalk-chat"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gtalk-ft"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gtalk-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gtalk-voip"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "hangouts"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "hangouts-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "hangouts-chat"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "hangouts-file-transfer"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "hangouts-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "hangouts-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "youtube"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "youtube_hd"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-chat"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-meet"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-meet-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-meet-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-meet-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-translate"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-maps"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "7723ac00-fde3-47ef-b6d6-c0b3fb3f51aa",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "Browsing",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "netflix"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "8e624e8b-a543-4d80-8b04-0d87fa46f893",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "APP_Scavengers",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "apple-updates"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "apple-services"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "twitter"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "instagram"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "youtube"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon-instant-video"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "316b173a-c544-4db4-b22d-5c99e3fc9b2f",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "Yahoo",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "yahoo"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "yahoo-messenger-video"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "1b990604-a168-4254-a963-a98b524c3863",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "zoho_crm_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "zoho-services"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "2895583a-ada6-4c40-82ef-e40510d5f51a",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "salesforce_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "salesforce"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "17869c2c-30b5-4313-a492-ae61a19a736b",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "concur_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "concur"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "c67f5c66-80d6-44b4-921f-621d6990dc3b",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "APP_BULK_DATA",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ftp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ftp-data"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-jabber-im"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "netblt"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rsync"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "3b1df0eb-3620-4f16-a66c-178d5a2adbe9",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "dropbox_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "dropbox"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "64a2bc77-dfab-4220-8bb8-194fb38db91f",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "office365_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-live-accounts"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-office-365"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-office-web-apps"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-services"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-update"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "outlook-web-service"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "share-point"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "skydrive"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "skype"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "groove"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-stream"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams-app-sharing"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "onedrive"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-diagnostics"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-intune"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-wudo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "f63ad893-826c-4457-a87c-d2bd56d92259",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "intuit_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "intuit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "fe2ca570-4d42-4923-8861-4e985d912b20",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "webex_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-collab-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-collab-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-collaboration"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-collab-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-spark"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-spark-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-spark-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-spark-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-app-sharing"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-meeting"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-video"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "b8be20a6-4e1e-42b4-8587-786096797825",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "Voice_Apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "adobe-connect"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon-chime"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon-chime-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "audio-over-http"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "circuit"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "circuit-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "circuit-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "circuit-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-collab-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-collab-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-collab-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-collaboration"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-ip-camera"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-ip-sla"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-jabber-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-jabber-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-jabber-im"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-jabber-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-media-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-media-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-phone"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-phone-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-phone-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-phone-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-phone-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-smart-probe"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "cisco-tv"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "conference-server"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "conferencing"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "dingtalk-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "dmp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "douyin-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-services-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-services-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-services-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gotomeeting"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "h225"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "h245"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "h323"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "itunes-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "jabber-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "jabber-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "jive-software"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "lifesize"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "mgcp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams-app-sharing"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-teams-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ringcentral"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ringcentral-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ringcentral-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ringcentral-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ringcentral-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rtcp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rtp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rtp-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rtp-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rtsp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rtsps"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "sdnskmp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "sgcp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "sip"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "sip-tls"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "skinny"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ss7ns"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "telepresence-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "telepresence-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "telepresence-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "tpip"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "video-over-http"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "voov-meeting"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "web-rtc"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "web-rtc-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "web-rtc-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-app-sharing"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-meeting"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "webex-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "wifi-calling"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "zoom-meetings"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "zoom-phone"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "skype"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "926805e7-b6a1-4b24-b2c1-205b3e58895f",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "amazon_aws_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon-web-services"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon-instant-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon-cloudfront"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon-ec2"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "amazon-s3"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "3b58c0ac-feb0-48b9-8049-2bdc1e48f0aa",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "oracle_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "oracle"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "oracle-bi"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "oracle-ebsuite-unsecured"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "oracle-sqlnet"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "oraclenames"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "oraclenet8cman"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "c68486e9-406a-4ec6-ae68-8950eacc1f12",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "Microsoft_Apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "bing"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "hockeyapp"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "live_hotmail"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "lync"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "lync_online"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-services"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms_translator"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-office-365"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "share-point"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "skydrive"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "skype"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "windows_azure"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "windows-azure"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "windows_update"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "windows_marketplace"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "windowslive"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "windowslivespace"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "windowsmedia"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "xbox"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "xbox_music"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "xbox_video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "xboxlive"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "xboxlive_marketplace"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "word_online"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "powerpoint_online"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-control"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-lync-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "ms-update"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "outlook-web-service"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "e20d631a-9576-4a17-b383-3e8dc83667f2",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "Google_Workspace_Apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail_basic"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail_chat"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail_drive"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gmail_mobile"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_docs"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-docs"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google_calendar"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-meet"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-meet-audio"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-meet-video"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-meet-media"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "google-chat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "479920d5-e794-41a2-b94c-efd7b279138c",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "gotomeeting_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "citrix"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "gotomeeting"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "40276529-7367-4217-96b1-2c5e1bc8d5a0",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "ICMP",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "icmp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "a261458e-fd85-4fb0-90d3-1190b30671d3",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "zendesk_apps",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "zendesk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "391e4e90-b805-4b2b-9c30-c5c91d997fdf",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "VIDEO_CONF",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "rtp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parcelId": "df5d525a-8121-4b83-8512-65df6c5c63d5",
+      "parcelType": "app-list",
+      "payload": {
+        "name": "WEB_TOOLS_APP",
+        "data": {
+          "entries": [
+            {
+              "app": {
+                "optionType": "global",
+                "value": "http"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "https"
+              }
+            },
+            {
+              "app": {
+                "optionType": "global",
+                "value": "sshell"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

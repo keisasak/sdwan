@@ -1,0 +1,99 @@
+{
+  "templateType": "cisco_logging",
+  "deviceType": [
+    "vedge-C8000V",
+    "vedge-C1111-8PLTELA",
+    "vedge-CSR-1000v",
+    "vedge-ISR-4331"
+  ],
+  "templateMinVersion": "15.0.0",
+  "lastUpdatedBy": "system",
+  "editedTemplateDefinition": {
+    "disk": {
+      "enable": {
+        "vipValue": "",
+        "vipObjectType": "object",
+        "vipType": "ignore"
+      },
+      "file": {
+        "size": {
+          "vipValue": "",
+          "vipObjectType": "object",
+          "vipType": "ignore"
+        },
+        "rotate": {
+          "vipValue": "",
+          "vipObjectType": "object",
+          "vipType": "ignore"
+        }
+      }
+    },
+    "server": {
+      "vipValue": [],
+      "vipObjectType": "tree",
+      "vipType": "ignore",
+      "vipPrimaryKey": [
+        "name"
+      ]
+    },
+    "ipv6-server": {
+      "vipValue": [],
+      "vipObjectType": "tree",
+      "vipType": "ignore",
+      "vipPrimaryKey": [
+        "name"
+      ]
+    }
+  },
+  "gTemplateClass": "cedge",
+  "templateDefinition": {
+    "disk": {
+      "enable": {
+        "vipValue": "",
+        "vipObjectType": "object",
+        "vipType": "ignore"
+      },
+      "file": {
+        "size": {
+          "vipValue": "",
+          "vipObjectType": "object",
+          "vipType": "ignore"
+        },
+        "rotate": {
+          "vipValue": "",
+          "vipObjectType": "object",
+          "vipType": "ignore"
+        }
+      }
+    },
+    "server": {
+      "vipValue": [],
+      "vipObjectType": "tree",
+      "vipType": "ignore",
+      "vipPrimaryKey": [
+        "name"
+      ]
+    },
+    "ipv6-server": {
+      "vipValue": [],
+      "vipObjectType": "tree",
+      "vipType": "ignore",
+      "vipPrimaryKey": [
+        "name"
+      ]
+    }
+  },
+  "configType": "xml",
+  "attachedMastersCount": 16,
+  "templateId": "eb80254f-419e-45c4-a4cf-3aa926f4e73a",
+  "createdOn": 1748399084436,
+  "@rid": 1970,
+  "factoryDefault": true,
+  "feature": "vmanage-default",
+  "createdBy": "system",
+  "templateName": "Default_Logging_Cisco_V01",
+  "devicesAttached": 0,
+  "templateDescription": "Factory Default template for Logging Cisco",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399084436
+}

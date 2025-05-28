@@ -1,0 +1,328 @@
+{
+  "templateMinVersion": "15.0.0",
+  "templateType": "cisco_bfd",
+  "deviceType": [
+    "vedge-C8000V"
+  ],
+  "lastUpdatedBy": "system",
+  "editedTemplateDefinition": {
+    "app-route": {
+      "multiplier": {
+        "vipObjectType": "object",
+        "vipType": "ignore",
+        "vipValue": 6,
+        "vipVariableName": "bfd_multiplier"
+      },
+      "poll-interval": {
+        "vipObjectType": "object",
+        "vipType": "ignore",
+        "vipValue": 600000,
+        "vipVariableName": "bfd_poll_interval"
+      }
+    },
+    "color": {
+      "vipType": "constant",
+      "vipValue": [
+        {
+          "color": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "lte",
+            "vipVariableName": "bfd_color"
+          },
+          "hello-interval": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": 300000,
+            "vipVariableName": "bfd_hello_interval"
+          },
+          "multiplier": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 7,
+            "vipVariableName": "bfd_color_multiplier"
+          },
+          "pmtu-discovery": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "false",
+            "vipVariableName": "bfd_pmtu_discovery"
+          },
+          "priority-order": [
+            "color",
+            "hello-interval",
+            "multiplier",
+            "pmtu-discovery"
+          ]
+        },
+        {
+          "color": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "mpls",
+            "vipVariableName": "bfd_color"
+          },
+          "hello-interval": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 1000,
+            "vipVariableName": "bfd_hello_interval"
+          },
+          "multiplier": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 7,
+            "vipVariableName": "bfd_color_multiplier"
+          },
+          "pmtu-discovery": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "false",
+            "vipVariableName": "bfd_pmtu_discovery"
+          },
+          "priority-order": [
+            "color",
+            "hello-interval",
+            "multiplier",
+            "pmtu-discovery"
+          ]
+        },
+        {
+          "color": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "biz-internet",
+            "vipVariableName": "bfd_color"
+          },
+          "hello-interval": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 1000,
+            "vipVariableName": "bfd_hello_interval"
+          },
+          "multiplier": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 7,
+            "vipVariableName": "bfd_color_multiplier"
+          },
+          "pmtu-discovery": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": "true",
+            "vipVariableName": "bfd_pmtu_discovery"
+          },
+          "priority-order": [
+            "color",
+            "hello-interval",
+            "multiplier",
+            "pmtu-discovery"
+          ]
+        },
+        {
+          "color": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "public-internet",
+            "vipVariableName": "bfd_color"
+          },
+          "hello-interval": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 1000,
+            "vipVariableName": "bfd_hello_interval"
+          },
+          "multiplier": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 7,
+            "vipVariableName": "bfd_color_multiplier"
+          },
+          "pmtu-discovery": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": "true",
+            "vipVariableName": "bfd_pmtu_discovery"
+          },
+          "priority-order": [
+            "color",
+            "hello-interval",
+            "multiplier",
+            "pmtu-discovery"
+          ]
+        }
+      ],
+      "vipObjectType": "tree",
+      "vipPrimaryKey": [
+        "color"
+      ]
+    }
+  },
+  "gTemplateClass": "cedge",
+  "templateDefinition": {
+    "app-route": {
+      "multiplier": {
+        "vipObjectType": "object",
+        "vipType": "ignore",
+        "vipValue": 6,
+        "vipVariableName": "bfd_multiplier"
+      },
+      "poll-interval": {
+        "vipObjectType": "object",
+        "vipType": "ignore",
+        "vipValue": 600000,
+        "vipVariableName": "bfd_poll_interval"
+      }
+    },
+    "color": {
+      "vipType": "constant",
+      "vipValue": [
+        {
+          "color": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "lte",
+            "vipVariableName": "bfd_color"
+          },
+          "hello-interval": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": 300000,
+            "vipVariableName": "bfd_hello_interval"
+          },
+          "multiplier": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 7,
+            "vipVariableName": "bfd_color_multiplier"
+          },
+          "pmtu-discovery": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "false",
+            "vipVariableName": "bfd_pmtu_discovery"
+          },
+          "priority-order": [
+            "color",
+            "hello-interval",
+            "multiplier",
+            "pmtu-discovery"
+          ]
+        },
+        {
+          "color": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "mpls",
+            "vipVariableName": "bfd_color"
+          },
+          "hello-interval": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 1000,
+            "vipVariableName": "bfd_hello_interval"
+          },
+          "multiplier": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 7,
+            "vipVariableName": "bfd_color_multiplier"
+          },
+          "pmtu-discovery": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "false",
+            "vipVariableName": "bfd_pmtu_discovery"
+          },
+          "priority-order": [
+            "color",
+            "hello-interval",
+            "multiplier",
+            "pmtu-discovery"
+          ]
+        },
+        {
+          "color": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "biz-internet",
+            "vipVariableName": "bfd_color"
+          },
+          "hello-interval": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 1000,
+            "vipVariableName": "bfd_hello_interval"
+          },
+          "multiplier": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 7,
+            "vipVariableName": "bfd_color_multiplier"
+          },
+          "pmtu-discovery": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": "true",
+            "vipVariableName": "bfd_pmtu_discovery"
+          },
+          "priority-order": [
+            "color",
+            "hello-interval",
+            "multiplier",
+            "pmtu-discovery"
+          ]
+        },
+        {
+          "color": {
+            "vipObjectType": "object",
+            "vipType": "constant",
+            "vipValue": "public-internet",
+            "vipVariableName": "bfd_color"
+          },
+          "hello-interval": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 1000,
+            "vipVariableName": "bfd_hello_interval"
+          },
+          "multiplier": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": 7,
+            "vipVariableName": "bfd_color_multiplier"
+          },
+          "pmtu-discovery": {
+            "vipObjectType": "object",
+            "vipType": "ignore",
+            "vipValue": "true",
+            "vipVariableName": "bfd_pmtu_discovery"
+          },
+          "priority-order": [
+            "color",
+            "hello-interval",
+            "multiplier",
+            "pmtu-discovery"
+          ]
+        }
+      ],
+      "vipObjectType": "tree",
+      "vipPrimaryKey": [
+        "color"
+      ]
+    }
+  },
+  "configType": "xml",
+  "attachedMastersCount": 2,
+  "templateId": "65ff5f49-df96-4d11-a5c9-d3b5ee26dd8a",
+  "createdOn": 1748399108837,
+  "@rid": 2432,
+  "factoryDefault": true,
+  "feature": "vmanage-default",
+  "createdBy": "system",
+  "templateName": "Factory_Default_Retail_Regular_BFD",
+  "devicesAttached": 0,
+  "templateDescription": "Factory Default Retail Regular BFD",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399108837
+}

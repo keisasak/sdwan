@@ -1,0 +1,14 @@
+[
+  {
+    "host-name": "Controller01",
+    "deviceIP": "100.0.0.101",
+    "local-system-ip": "100.0.0.101",
+    "site-id": "100",
+    "device-groups": [
+      "No groups"
+    ],
+    "uuid": "206ed8f5-1701-4428-97b8-9826fbaae6bf",
+    "personality": "vsmart",
+    "configCloudxMode": "none"
+  }
+]

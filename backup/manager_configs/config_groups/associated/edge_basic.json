@@ -1,0 +1,55 @@
+{
+  "devices": [
+    {
+      "id": "C8K-27148AFE-7160-69D3-ACC5-F77560530D63",
+      "site-name": "SITE_3",
+      "host-name": "Edge3",
+      "site-id": "3",
+      "deviceModel": "vedge-C8000V",
+      "tags": [],
+      "device-lock": "Yes",
+      "addedByRule": false,
+      "configStatusMessage": "In Sync",
+      "deviceIP": "10.0.0.3",
+      "configGroupLastUpdatedOn": "1748399353740",
+      "unsupportedFeatures": [],
+      "hierarchyNamePath": "Global/SITE_3",
+      "hierarchyTypePath": "GLOBAL/SITE",
+      "configGroupUpToDate": "True"
+    },
+    {
+      "id": "C8K-3D1A8960-6E76-532C-DA93-50626FC5797E",
+      "site-name": "SITE_1",
+      "host-name": "Edge1",
+      "site-id": "1",
+      "deviceModel": "vedge-C8000V",
+      "tags": [],
+      "device-lock": "Yes",
+      "addedByRule": false,
+      "configStatusMessage": "In Sync",
+      "deviceIP": "10.0.0.1",
+      "configGroupLastUpdatedOn": "1748399353740",
+      "unsupportedFeatures": [],
+      "hierarchyNamePath": "Global/SITE_1",
+      "hierarchyTypePath": "GLOBAL/SITE",
+      "configGroupUpToDate": "True"
+    },
+    {
+      "id": "C8K-D4CE7174-5261-7E6F-91EA-4926BCF4C2DD",
+      "site-name": "SITE_2",
+      "host-name": "Edge2",
+      "site-id": "2",
+      "deviceModel": "vedge-C8000V",
+      "tags": [],
+      "device-lock": "Yes",
+      "addedByRule": false,
+      "configStatusMessage": "In Sync",
+      "deviceIP": "10.0.0.2",
+      "configGroupLastUpdatedOn": "1748399353740",
+      "unsupportedFeatures": [],
+      "hierarchyNamePath": "Global/SITE_2",
+      "hierarchyTypePath": "GLOBAL/SITE",
+      "configGroupUpToDate": "True"
+    }
+  ]
+}

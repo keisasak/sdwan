@@ -1,0 +1,40 @@
+{
+  "templateType": "security-vsmart",
+  "deviceType": [
+    "vsmart"
+  ],
+  "templateMinVersion": "15.0.0",
+  "lastUpdatedBy": "sdwan",
+  "editedTemplateDefinition": {
+    "control": {
+      "protocol": {
+        "vipObjectType": "object",
+        "vipType": "ignore",
+        "vipValue": "dtls"
+      }
+    }
+  },
+  "gTemplateClass": "vedge",
+  "templateDefinition": {
+    "control": {
+      "protocol": {
+        "vipObjectType": "object",
+        "vipType": "ignore",
+        "vipValue": "dtls"
+      }
+    }
+  },
+  "configType": "xml",
+  "attachedMastersCount": 1,
+  "templateId": "211c8892-0ba8-4a62-a666-df4ac51ca9b4",
+  "createdOn": 1748399286423,
+  "@rid": 2712,
+  "factoryDefault": false,
+  "feature": "vmanage-default",
+  "createdBy": "sdwan",
+  "templateName": "controller_basic_security",
+  "devicesAttached": 1,
+  "templateDescription": "Do not modify!",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399286423
+}

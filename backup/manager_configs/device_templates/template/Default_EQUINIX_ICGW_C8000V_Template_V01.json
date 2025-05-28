@@ -1,0 +1,61 @@
+{
+  "templateName": "Default_EQUINIX_ICGW_C8000V_Template_V01",
+  "templateDescription": "Default device template for Equinix Interconnect Gateway C8000V",
+  "deviceType": "vedge-C8000V",
+  "deviceRole": "sdwan-edge",
+  "configType": "template",
+  "factoryDefault": true,
+  "policyId": "",
+  "featureTemplateUidRange": [],
+  "draftMode": false,
+  "connectionPreference": true,
+  "connectionPreferenceRequired": true,
+  "generalTemplates": [
+    {
+      "templateId": "9476a32c-7204-4537-aed5-9fd8a748e4ea",
+      "templateType": "cedge_aaa"
+    },
+    {
+      "templateId": "9470dc83-e2b6-4d90-95e6-3ed373005592",
+      "templateType": "cisco_bfd"
+    },
+    {
+      "templateId": "c7abd38f-8cb4-47d5-bdf3-fb7f8a3a060f",
+      "templateType": "cisco_omp"
+    },
+    {
+      "templateId": "eef43d52-250b-479d-bd07-1abc1bb7067b",
+      "templateType": "cisco_security"
+    },
+    {
+      "templateId": "68463028-b9c5-4e63-a14d-51422b03cc3f",
+      "templateType": "cisco_system",
+      "subTemplates": [
+        {
+          "templateId": "eb80254f-419e-45c4-a4cf-3aa926f4e73a",
+          "templateType": "cisco_logging"
+        }
+      ]
+    },
+    {
+      "templateId": "16d19821-2ed3-4eb4-a022-c0d0061c2fae",
+      "templateType": "cisco_vpn",
+      "subTemplates": [
+        {
+          "templateId": "29140a37-f934-42f9-86bc-9dddea6140d7",
+          "templateType": "cisco_vpn_interface"
+        }
+      ]
+    },
+    {
+      "templateId": "fe80aac7-3348-4a10-a470-cffa496e5356",
+      "templateType": "cisco_vpn"
+    },
+    {
+      "templateId": "87829620-6737-4bac-adff-d48f0670f412",
+      "templateType": "cedge_global"
+    }
+  ],
+  "templateId": "f532b8d3-0b86-4b59-9d15-bc4007073184",
+  "templateClass": "cedge"
+}

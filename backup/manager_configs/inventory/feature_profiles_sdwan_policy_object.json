@@ -1,0 +1,13 @@
+[
+  {
+    "profileId": "c955b34e-57cb-4a82-a2ea-7dacbaf94d80",
+    "profileName": "Default_Policy_Object_Profile",
+    "solution": "sdwan",
+    "profileType": "policy-object",
+    "createdBy": "system",
+    "lastUpdatedBy": "system",
+    "createdOn": 1748399060127,
+    "description": "Default profile for Policy-Objects",
+    "lastUpdatedOn": 1748399076318
+  }
+]

@@ -1,0 +1,192 @@
+{
+  "templateType": "system-vsmart",
+  "deviceType": [
+    "vsmart"
+  ],
+  "templateMinVersion": "15.0.0",
+  "lastUpdatedBy": "sdwan",
+  "editedTemplateDefinition": {
+    "clock": {
+      "timezone": {
+        "vipObjectType": "object",
+        "vipValue": "America/Los_Angeles",
+        "vipType": "ignore"
+      }
+    },
+    "gps-location": {
+      "latitude": {
+        "vipObjectType": "object",
+        "vipType": "ignore"
+      },
+      "longitude": {
+        "vipObjectType": "object",
+        "vipType": "ignore"
+      }
+    },
+    "timer": {
+      "dns-cache-timeout": {
+        "vipObjectType": "object",
+        "vipValue": 30,
+        "vipType": "ignore"
+      }
+    },
+    "location": {
+      "vipObjectType": "object",
+      "vipType": "ignore"
+    },
+    "system-tunnel-mtu": {
+      "vipObjectType": "object",
+      "vipValue": 1024,
+      "vipType": "ignore"
+    },
+    "track-transport": {
+      "vipObjectType": "object",
+      "vipValue": "true",
+      "vipType": "ignore"
+    },
+    "port-offset": {
+      "vipObjectType": "object",
+      "vipValue": 0,
+      "vipType": "ignore"
+    },
+    "port-hop": {
+      "vipObjectType": "object",
+      "vipValue": "true",
+      "vipType": "ignore"
+    },
+    "control-session-pps": {
+      "vipObjectType": "object",
+      "vipValue": 300,
+      "vipType": "ignore"
+    },
+    "description": {
+      "vipObjectType": "object",
+      "vipType": "ignore"
+    },
+    "device-groups": {
+      "vipObjectType": "list",
+      "vipType": "ignore"
+    },
+    "site-id": {
+      "vipObjectType": "object",
+      "vipType": "variable",
+      "vipValue": ""
+    },
+    "system-ip": {
+      "vipObjectType": "object",
+      "vipType": "variable",
+      "vipValue": ""
+    },
+    "host-name": {
+      "vipObjectType": "object",
+      "vipType": "variable",
+      "vipValue": ""
+    },
+    "track-default-gateway": {
+      "vipObjectType": "object",
+      "vipValue": "true",
+      "vipType": "ignore"
+    },
+    "host-policer-pps": {},
+    "icmp-error-pps": {}
+  },
+  "gTemplateClass": "vedge",
+  "templateDefinition": {
+    "clock": {
+      "timezone": {
+        "vipObjectType": "object",
+        "vipValue": "America/Los_Angeles",
+        "vipType": "ignore"
+      }
+    },
+    "gps-location": {
+      "latitude": {
+        "vipObjectType": "object",
+        "vipType": "ignore"
+      },
+      "longitude": {
+        "vipObjectType": "object",
+        "vipType": "ignore"
+      }
+    },
+    "timer": {
+      "dns-cache-timeout": {
+        "vipObjectType": "object",
+        "vipValue": 30,
+        "vipType": "ignore"
+      }
+    },
+    "location": {
+      "vipObjectType": "object",
+      "vipType": "ignore"
+    },
+    "system-tunnel-mtu": {
+      "vipObjectType": "object",
+      "vipValue": 1024,
+      "vipType": "ignore"
+    },
+    "track-transport": {
+      "vipObjectType": "object",
+      "vipValue": "true",
+      "vipType": "ignore"
+    },
+    "port-offset": {
+      "vipObjectType": "object",
+      "vipValue": 0,
+      "vipType": "ignore"
+    },
+    "port-hop": {
+      "vipObjectType": "object",
+      "vipValue": "true",
+      "vipType": "ignore"
+    },
+    "control-session-pps": {
+      "vipObjectType": "object",
+      "vipValue": 300,
+      "vipType": "ignore"
+    },
+    "description": {
+      "vipObjectType": "object",
+      "vipType": "ignore"
+    },
+    "device-groups": {
+      "vipObjectType": "list",
+      "vipType": "ignore"
+    },
+    "site-id": {
+      "vipObjectType": "object",
+      "vipType": "variable",
+      "vipValue": ""
+    },
+    "system-ip": {
+      "vipObjectType": "object",
+      "vipType": "variable",
+      "vipValue": ""
+    },
+    "host-name": {
+      "vipObjectType": "object",
+      "vipType": "variable",
+      "vipValue": ""
+    },
+    "track-default-gateway": {
+      "vipObjectType": "object",
+      "vipValue": "true",
+      "vipType": "ignore"
+    },
+    "host-policer-pps": {},
+    "icmp-error-pps": {}
+  },
+  "configType": "xml",
+  "attachedMastersCount": 1,
+  "templateId": "dbde8a26-93c2-40ca-b03f-7523f6fe5ed6",
+  "createdOn": 1748399287007,
+  "@rid": 2714,
+  "factoryDefault": false,
+  "feature": "vmanage-default",
+  "createdBy": "sdwan",
+  "templateName": "controller_basic_system",
+  "devicesAttached": 1,
+  "templateDescription": "Do not modify!",
+  "tenantId": "default",
+  "lastUpdatedOn": 1748399287007
+}

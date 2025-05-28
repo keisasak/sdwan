@@ -1,0 +1,13 @@
+[
+  {
+    "profileId": "5935159d-ff9c-4198-9397-d8b690bdf5e3",
+    "profileName": "edge_basic_wan",
+    "solution": "sdwan",
+    "profileType": "transport",
+    "createdBy": "sdwan",
+    "lastUpdatedBy": "sdwan",
+    "createdOn": 1748399290615,
+    "description": "Do not modify!",
+    "lastUpdatedOn": 1748399292249
+  }
+]

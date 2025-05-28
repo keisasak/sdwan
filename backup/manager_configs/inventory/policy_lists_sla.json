@@ -1,0 +1,162 @@
+[
+  {
+    "listId": "9200bf91-ee86-4432-be00-33196379e06c",
+    "name": "Best-Effort",
+    "type": "sla",
+    "description": "Best Effort SLA",
+    "entries": [
+      {
+        "jitter": "500",
+        "latency": "500",
+        "loss": "5"
+      }
+    ],
+    "lastUpdated": 1748399120891,
+    "owner": "system",
+    "readOnly": true,
+    "version": "2.0",
+    "infoTag": "",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "2b7dbadb-4f3c-4e99-a7a5-62c72e1d1237",
+    "name": "Bulk-Data",
+    "type": "sla",
+    "description": "ACI Bulk Data SLA",
+    "entries": [
+      {
+        "jitter": "100",
+        "latency": "300",
+        "loss": "10"
+      }
+    ],
+    "lastUpdated": 1748399119677,
+    "owner": "system",
+    "readOnly": true,
+    "version": "2.0",
+    "infoTag": "aci",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "974b80f3-02a4-4ad5-835e-89b3df9d0d0a",
+    "name": "Business-Critical",
+    "type": "sla",
+    "description": "Business Critical SLA",
+    "entries": [
+      {
+        "jitter": "100",
+        "latency": "250",
+        "loss": "1"
+      }
+    ],
+    "lastUpdated": 1748399119922,
+    "owner": "system",
+    "readOnly": true,
+    "version": "2.0",
+    "infoTag": "",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "96fd258d-16e4-459a-a3c3-ed0d2971c818",
+    "name": "Business-Data",
+    "type": "sla",
+    "description": "Business Data SLA",
+    "entries": [
+      {
+        "jitter": "200",
+        "latency": "350",
+        "loss": "3"
+      }
+    ],
+    "lastUpdated": 1748399119504,
+    "owner": "system",
+    "readOnly": true,
+    "version": "2.0",
+    "infoTag": "",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "3ae9998d-176a-465f-b139-81e4d12c8913",
+    "name": "Default",
+    "type": "sla",
+    "description": "ACI Default SLA",
+    "entries": [
+      {
+        "jitter": "100",
+        "latency": "300",
+        "loss": "25"
+      }
+    ],
+    "lastUpdated": 1748399119002,
+    "owner": "system",
+    "readOnly": true,
+    "version": "2.0",
+    "infoTag": "aci",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "d909c408-4935-457b-8f6e-b0fc0922513f",
+    "name": "Realtime",
+    "type": "sla",
+    "description": "Realtime SLA",
+    "entries": [
+      {
+        "jitter": "30",
+        "latency": "150",
+        "loss": "1"
+      }
+    ],
+    "lastUpdated": 1748399120662,
+    "owner": "system",
+    "readOnly": true,
+    "version": "2.0",
+    "infoTag": "",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "4a0fda7e-ae3e-4f74-9bea-a72662ec582c",
+    "name": "Transactional-Data",
+    "type": "sla",
+    "description": "ACI Transactional Data SLA",
+    "entries": [
+      {
+        "jitter": "100",
+        "latency": "50",
+        "loss": "5"
+      }
+    ],
+    "lastUpdated": 1748399119237,
+    "owner": "system",
+    "readOnly": true,
+    "version": "2.0",
+    "infoTag": "aci",
+    "referenceCount": 0,
+    "references": []
+  },
+  {
+    "listId": "70d5ff35-72e7-4592-a384-b4521404f0ea",
+    "name": "Voice-And-Video",
+    "type": "sla",
+    "description": "ACI Voice And Video SLA",
+    "entries": [
+      {
+        "jitter": "30",
+        "latency": "45",
+        "loss": "2"
+      }
+    ],
+    "lastUpdated": 1748399120477,
+    "owner": "system",
+    "readOnly": true,
+    "version": "2.0",
+    "infoTag": "aci",
+    "referenceCount": 0,
+    "references": []
+  }
+]

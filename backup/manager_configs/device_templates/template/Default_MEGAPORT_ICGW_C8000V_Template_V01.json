@@ -1,0 +1,57 @@
+{
+  "templateName": "Default_MEGAPORT_ICGW_C8000V_Template_V01",
+  "templateDescription": "Default device template for Megaport Interconnect Gateway C8000V",
+  "deviceType": "vedge-C8000V",
+  "configType": "template",
+  "factoryDefault": true,
+  "policyId": "",
+  "featureTemplateUidRange": [],
+  "connectionPreference": true,
+  "connectionPreferenceRequired": true,
+  "generalTemplates": [
+    {
+      "templateId": "9476a32c-7204-4537-aed5-9fd8a748e4ea",
+      "templateType": "cedge_aaa"
+    },
+    {
+      "templateId": "9470dc83-e2b6-4d90-95e6-3ed373005592",
+      "templateType": "cisco_bfd"
+    },
+    {
+      "templateId": "6e87b458-ea7a-43e0-a7a8-0b51dd566565",
+      "templateType": "cisco_omp"
+    },
+    {
+      "templateId": "eef43d52-250b-479d-bd07-1abc1bb7067b",
+      "templateType": "cisco_security"
+    },
+    {
+      "templateId": "68463028-b9c5-4e63-a14d-51422b03cc3f",
+      "templateType": "cisco_system",
+      "subTemplates": [
+        {
+          "templateId": "eb80254f-419e-45c4-a4cf-3aa926f4e73a",
+          "templateType": "cisco_logging"
+        }
+      ]
+    },
+    {
+      "templateId": "8f49f571-3a9c-4e78-8ffe-c0be4e89f92c",
+      "templateType": "cisco_vpn",
+      "subTemplates": [
+        {
+          "templateId": "82edb195-abdd-4afc-b4fd-9d902b3ac247",
+          "templateType": "cisco_vpn_interface"
+        }
+      ]
+    },
+    {
+      "templateId": "ca4d91c3-8bb5-4c28-b325-523cb6037cc8",
+      "templateType": "cedge_global"
+    }
+  ],
+  "templateClass": "cedge",
+  "templateId": "ece44986-12b2-43c7-8f1e-4dc29b7ed3c6",
+  "deviceRole": "sdwan-edge",
+  "draftMode": false
+}

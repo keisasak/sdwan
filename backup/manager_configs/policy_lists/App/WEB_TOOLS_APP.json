@@ -1,0 +1,25 @@
+{
+  "listId": "d1a8828f-3b53-4438-ad6b-27cb3dad68e8",
+  "name": "WEB_TOOLS_APP",
+  "type": "app",
+  "description": "Web Tools Applications List",
+  "entries": [
+    {
+      "app": "http"
+    },
+    {
+      "app": "https"
+    },
+    {
+      "app": "sshell"
+    }
+  ],
+  "lastUpdated": 1748399121156,
+  "owner": "system",
+  "readOnly": true,
+  "version": "1.0",
+  "infoTag": "",
+  "referenceCount": 0,
+  "references": [],
+  "isActivatedByVsmart": false
+}

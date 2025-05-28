@@ -1,0 +1,31 @@
+{
+  "listId": "36012be9-2d54-44d4-b2d5-bd368b44bf89",
+  "name": "default",
+  "type": "prefix",
+  "description": "Desc Not Required",
+  "entries": [
+    {
+      "ipPrefix": "0.0.0.0/0"
+    }
+  ],
+  "lastUpdated": 1748421064302,
+  "owner": "admin",
+  "readOnly": false,
+  "version": "0",
+  "infoTag": "",
+  "referenceCount": 2,
+  "references": [
+    {
+      "id": "345664a9-0a04-409d-87fe-69caf0398184",
+      "type": "control"
+    },
+    {
+      "id": "30e8952e-bad3-4710-ae59-da582aefe394",
+      "type": "control"
+    }
+  ],
+  "activatedId": [
+    "58f7c7a2-c4b2-4166-9069-d3ab8eed2c80"
+  ],
+  "isActivatedByVsmart": true
+}

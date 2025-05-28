@@ -487,7 +487,7 @@
     }
   },
   "configType": "xml",
-  "attachedMastersCount": 15,
+  "attachedMastersCount": 16,
   "templateId": "ca4d91c3-8bb5-4c28-b325-523cb6037cc8",
   "createdOn": 1748399100432,
   "@rid": 2399,
@@ -495,7 +495,7 @@
   "feature": "vmanage-default",
   "createdBy": "system",
   "templateName": "Factory_Default_Global_CISCO_Template",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Default Global CISCO template settings",
   "tenantId": "default",
   "lastUpdatedOn": 1748399100432

@@ -1,21 +1,19 @@
 {
-  "templateMinVersion": "20.3.0",
+  "templateMinVersion": "15.0.0",
   "templateType": "cisco_vpn",
   "deviceType": [
-    "vedge-C8000V",
-    "vedge-CSR-1000v"
+    "vedge-C8000V"
   ],
-  "lastUpdatedBy": "system",
+  "lastUpdatedBy": "admin",
   "editedTemplateDefinition": {
     "vpn-id": {
       "vipObjectType": "object",
       "vipType": "constant",
-      "vipValue": 512
+      "vipValue": 0
     },
     "name": {
       "vipObjectType": "object",
-      "vipType": "constant",
-      "vipValue": "Management",
+      "vipType": "ignore",
       "vipVariableName": "vpn_name"
     },
     "ecmp-hash-key": {
@@ -43,6 +41,18 @@
         }
       }
     },
+    "tenant-vpn-id": {},
+    "org-name": {},
+    "omp-admin-distance-ipv4": {
+      "vipObjectType": "object",
+      "vipType": "ignore",
+      "vipVariableName": "vpn_omp-admin-distance-ipv4"
+    },
+    "omp-admin-distance-ipv6": {
+      "vipObjectType": "object",
+      "vipType": "ignore",
+      "vipVariableName": "vpn_omp-admin-distance-ipv6"
+    },
     "nat": {
       "natpool": {
         "vipType": "ignore",
@@ -58,7 +68,10 @@
         "vipObjectType": "tree",
         "vipPrimaryKey": [
           "source-port",
-          "translate-port"
+          "translate-port",
+          "source-ip",
+          "translate-ip",
+          "proto"
         ]
       },
       "static": {
@@ -69,7 +82,25 @@
           "source-ip",
           "translate-ip"
         ]
+      },
+      "subnet-static": {
+        "vipType": "ignore",
+        "vipValue": [],
+        "vipObjectType": "tree",
+        "vipPrimaryKey": [
+          "source-ip-subnet",
+          "translate-ip-subnet"
+        ]
       }
+    },
+    "route-import-from": {
+      "vipType": "ignore",
+      "vipValue": [],
+      "vipObjectType": "tree",
+      "vipPrimaryKey": [
+        "protocol",
+        "source-vpn"
+      ]
     },
     "route-import": {
       "vipType": "ignore",
@@ -104,6 +135,39 @@
       ]
     },
     "ip": {
+      "route": {
+        "vipType": "constant",
+        "vipValue": [
+          {
+            "prefix": {
+              "vipObjectType": "object",
+              "vipType": "constant",
+              "vipValue": "0.0.0.0/0",
+              "vipVariableName": "vpn_ipv4_ip_prefix"
+            },
+            "null0": {
+              "vipType": "constant",
+              "vipObjectType": "node-only",
+              "vipValue": "true"
+            },
+            "distance": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipValue": 1,
+              "vipVariableName": "ipdistance_0"
+            },
+            "priority-order": [
+              "prefix",
+              "null0",
+              "distance"
+            ]
+          }
+        ],
+        "vipObjectType": "tree",
+        "vipPrimaryKey": [
+          "prefix"
+        ]
+      },
       "gre-route": {},
       "ipsec-route": {},
       "service-route": {}
@@ -133,12 +197,11 @@
     "vpn-id": {
       "vipObjectType": "object",
       "vipType": "constant",
-      "vipValue": 512
+      "vipValue": 0
     },
     "name": {
       "vipObjectType": "object",
-      "vipType": "constant",
-      "vipValue": "Management",
+      "vipType": "ignore",
       "vipVariableName": "vpn_name"
     },
     "ecmp-hash-key": {
@@ -166,6 +229,18 @@
         }
       }
     },
+    "tenant-vpn-id": {},
+    "org-name": {},
+    "omp-admin-distance-ipv4": {
+      "vipObjectType": "object",
+      "vipType": "ignore",
+      "vipVariableName": "vpn_omp-admin-distance-ipv4"
+    },
+    "omp-admin-distance-ipv6": {
+      "vipObjectType": "object",
+      "vipType": "ignore",
+      "vipVariableName": "vpn_omp-admin-distance-ipv6"
+    },
     "nat": {
       "natpool": {
         "vipType": "ignore",
@@ -181,7 +256,10 @@
         "vipObjectType": "tree",
         "vipPrimaryKey": [
           "source-port",
-          "translate-port"
+          "translate-port",
+          "source-ip",
+          "translate-ip",
+          "proto"
         ]
       },
       "static": {
@@ -192,7 +270,25 @@
           "source-ip",
           "translate-ip"
         ]
+      },
+      "subnet-static": {
+        "vipType": "ignore",
+        "vipValue": [],
+        "vipObjectType": "tree",
+        "vipPrimaryKey": [
+          "source-ip-subnet",
+          "translate-ip-subnet"
+        ]
       }
+    },
+    "route-import-from": {
+      "vipType": "ignore",
+      "vipValue": [],
+      "vipObjectType": "tree",
+      "vipPrimaryKey": [
+        "protocol",
+        "source-vpn"
+      ]
     },
     "route-import": {
       "vipType": "ignore",
@@ -227,6 +323,39 @@
       ]
     },
     "ip": {
+      "route": {
+        "vipType": "constant",
+        "vipValue": [
+          {
+            "prefix": {
+              "vipObjectType": "object",
+              "vipType": "constant",
+              "vipValue": "0.0.0.0/0",
+              "vipVariableName": "vpn_ipv4_ip_prefix"
+            },
+            "null0": {
+              "vipType": "constant",
+              "vipObjectType": "node-only",
+              "vipValue": "true"
+            },
+            "distance": {
+              "vipObjectType": "object",
+              "vipType": "ignore",
+              "vipValue": 1,
+              "vipVariableName": "ipdistance_0"
+            },
+            "priority-order": [
+              "prefix",
+              "null0",
+              "distance"
+            ]
+          }
+        ],
+        "vipObjectType": "tree",
+        "vipPrimaryKey": [
+          "prefix"
+        ]
+      },
       "gre-route": {},
       "ipsec-route": {},
       "service-route": {}
@@ -251,17 +380,17 @@
       }
     }
   },
-  "attachedMastersCount": 9,
+  "attachedMastersCount": 0,
   "configType": "xml",
-  "templateId": "d2447a3f-c868-4189-b950-d2f2bbe892a6",
-  "createdOn": 1748399091833,
-  "@rid": 2368,
-  "factoryDefault": true,
+  "templateId": "f63c5528-d539-4703-97cf-a29de7584f86",
+  "createdOn": 1748406520985,
+  "@rid": 3003,
+  "factoryDefault": false,
   "feature": "vmanage-default",
-  "createdBy": "system",
-  "templateName": "Default_AWS_TGW_CSR_VPN512_V01",
-  "devicesAttached": 3,
-  "templateDescription": "Default VPN 512 template for AWS Transit Gateway CSR",
+  "templateName": "basic_test",
+  "createdBy": "admin",
+  "devicesAttached": 0,
+  "templateDescription": "basic_test",
   "tenantId": "default",
-  "lastUpdatedOn": 1748399091833
+  "lastUpdatedOn": 1748406520985
 }

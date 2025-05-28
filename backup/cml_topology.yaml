@@ -418,6 +418,75 @@ nodes:
               <vpn-id>512</vpn-id>
             </vpn-instance>
           </vpn>
+          <policy xmlns="http://viptela.com/policy">
+            <lists>
+              <site-list>
+                <name>spoke</name>
+                <site-id>
+                  <id>1</id>
+                </site-id>
+                <site-id>
+                  <id>2</id>
+                </site-id>
+              </site-list>
+              <prefix-list>
+                <name>default</name>
+                <ip-prefix>
+                  <ip>0.0.0.0/0</ip>
+                </ip-prefix>
+              </prefix-list>
+            </lists>
+            <control-policy>
+              <name>hub_and_spoke_v4</name>
+              <sequence>
+                <seq-value>1</seq-value>
+                <match>
+                  <route-type>tloc</route-type>
+                  <tloc>
+                    <ip>10.0.0.3</ip>
+                    <color>biz-internet</color>
+                    <encap>ipsec</encap>
+                  </tloc>
+                </match>
+                <action>
+                  <action-value>accept</action-value>
+                </action>
+              </sequence>
+              <sequence>
+                <seq-value>11</seq-value>
+                <match>
+                  <route-type>tloc</route-type>
+                  <tloc>
+                    <ip>10.0.0.3</ip>
+                    <color>mpls</color>
+                    <encap>ipsec</encap>
+                  </tloc>
+                </match>
+                <action>
+                  <action-value>accept</action-value>
+                </action>
+              </sequence>
+              <sequence>
+                <seq-value>21</seq-value>
+                <match>
+                  <route-type>route</route-type>
+                  <prefix-list>default</prefix-list>
+                </match>
+                <action>
+                  <action-value>accept</action-value>
+                </action>
+              </sequence>
+            </control-policy>
+          </policy>
+          <apply-policy xmlns="http://viptela.com/policy">
+            <site-list>
+              <name>spoke</name>
+              <control-policy>
+                <direction>out</direction>
+                <pol-name>hub_and_spoke_v4</pol-name>
+              </control-policy>
+            </site-list>
+          </apply-policy>
         </config>
   cpu_limit:
   cpus:
@@ -779,7 +848,7 @@ nodes:
   configuration:
   - name: iosxe_config.txt
     content: "Building configuration...\n\nCurrent configuration : 5459 bytes\n!\n
-      ! Last configuration change at 02:34:58 UTC Wed May 28 2025\n!\nversion 17.13\n
+      ! Last configuration change at 09:00:57 UTC Wed May 28 2025\n!\nversion 17.13\n
       service timestamps debug datetime msec\nservice timestamps log datetime msec\n
       platform qfp utilization monitor load 80\nplatform punt-keepalive disable-kernel-core\n
       platform sslvpn use-pd\nplatform console serial\n!\nhostname Gateway\n!\nboot-start-marker\n
@@ -1318,8 +1387,8 @@ nodes:
        system-ip             10.0.0.1
        overlay-id            1
        site-id               1
-       ipv6-strict-control   false
-       port-offset           0
+       no transport-gateway enable
+       port-offset           1
        control-session-pps   300
        admin-tech-on-failure
        sp-organization-name  cml-sdwan-lab-tool
@@ -1327,11 +1396,13 @@ nodes:
        port-hop
        track-transport
        track-default-gateway
-       console-baud-rate     9600
+       console-baud-rate     19200
        no on-demand enable
        on-demand idle-timeout 10
        vbond validator.sdwan.local port 12346
       !
+      banner login \x03Un authorised Logins tracked\x03
+      banner motd \x03Restricted Use\x03
       service timestamps debug datetime msec
       service timestamps log datetime msec
       service tcp-keepalives-in
@@ -1340,25 +1411,34 @@ nodes:
       no service udp-small-servers
       platform console serial
       hostname Edge1
-      username admin privilege 15 secret 9 $9$wmRo78i6k4ZFq6$dqCjZW5sbj25oR4fhaQsZ6vD0x8ruNqnrI8rKcrTYxQ
+      username admin privilege 15 secret 9 $9$3V6L3V6L2VUI2k$ysPnXOdg8RLj9KgMdmfHdSHkdaMmiHzGaUpcqH6pfTo
       vrf definition 1
-       description VPN 1
+       rd 1:1
        address-family ipv4
+        route-target export 1:1
+        route-target import 1:1
         exit-address-family
        !
        address-family ipv6
         exit-address-family
        !
       !
-      global-address-family ipv4
-       exit-global-af
+      vrf definition Mgmt-intf
+       description Management
+       rd          1:512
+       address-family ipv4
+        route-target export 1:512
+        route-target import 1:512
+        exit-address-family
+       !
+       address-family ipv6
+        exit-address-family
+       !
       !
       ip arp proxy disable
       no ip finger
       no ip rcmd rcp-enable
       no ip rcmd rsh-enable
-      ip cef load-sharing algorithm include-ports source destination
-      no ip domain lookup
       ip dhcp excluded-address vrf 1 192.168.1.1
       ip dhcp pool vrf-1-GigabitEthernet3
        vrf 1
@@ -1378,6 +1458,7 @@ nodes:
       ip route 0.0.0.0 0.0.0.0 172.16.2.254
       ip scp server enable
       ip bootp server
+      no ip source-route
       no ip ssh bulk-mode
       ip tcp RST-count 10 RST-window 5000
       no ip http server
@@ -1385,10 +1466,8 @@ nodes:
       ip nat inside source list nat-dia-vpn-hop-access-list interface GigabitEthernet1 overload
       ip nat translation tcp-timeout 3600
       ip nat translation udp-timeout 60
-      ip nat route vrf 1 0.0.0.0 0.0.0.0 global
       ip nat settings central-policy
       ipv6 unicast-routing
-      ipv6 cef load-sharing algorithm include-ports source destination
       ipv6 rip vrf-mode enable
       cdp run
       interface GigabitEthernet1
@@ -1463,6 +1542,7 @@ nodes:
       !
       clock timezone UTC 0 0
       logging persistent size 104857600 filesize 10485760
+      no logging monitor
       logging buffered 512000
       logging console
       no logging queue-limit
@@ -1480,7 +1560,7 @@ nodes:
        stopbits 1
       !
       line con 0
-       speed    9600
+       speed    19200
        stopbits 1
       !
       line vty 0 4
@@ -1528,10 +1608,16 @@ nodes:
          encapsulation ipsec weight 1
          no border
          color mpls restrict
+         no last-resort-circuit
          no low-bandwidth-link
          no vbond-as-stun-server
          vmanage-connection-preference 5
          port-hop
+         carrier                       default
+         nat-refresh-interval          5
+         hello-interval                1000
+
+         hello-tolerance               12
          no allow-service all
          no allow-service bgp
          allow-service dhcp
@@ -1552,8 +1638,6 @@ nodes:
         no dreopt enable
         no httpopt enable
        !
-       ip load-sharing algorithm ip-and-ports
-       ipv6 load-sharing algorithm ip-and-ports
        omp
         no shutdown
         send-path-limit  4
@@ -1567,20 +1651,36 @@ nodes:
          eor-timer              300
         exit
         address-family ipv4 vrf 1
-        !
-        address-family ipv4
          advertise connected
          advertise static
-         distance 251
+        !
+        address-family ipv4
+         advertise bgp
+         advertise connected
+         advertise static
         !
         address-family ipv6
-         distance 251
+         advertise bgp
+         advertise connected
+         advertise static
         !
        !
       !
+      bfd color lte
+       hello-interval 1000
+       no pmtu-discovery
+       multiplier     1
+      !
       bfd default-dscp 48
-      bfd app-route multiplier 6
-      bfd app-route poll-interval 600000
+      bfd app-route multiplier 2
+      bfd app-route poll-interval 123400
+      security
+       ipsec
+        rekey          86400
+        replay-window  512
+        integrity-type ip-udp-esp esp
+       !
+      !
       sslproxy
        no enable
        rsa-key-modulus      2048
@@ -1732,8 +1832,8 @@ nodes:
        system-ip             10.0.0.2
        overlay-id            1
        site-id               2
-       ipv6-strict-control   false
-       port-offset           0
+       no transport-gateway enable
+       port-offset           1
        control-session-pps   300
        admin-tech-on-failure
        sp-organization-name  cml-sdwan-lab-tool
@@ -1741,11 +1841,13 @@ nodes:
        port-hop
        track-transport
        track-default-gateway
-       console-baud-rate     9600
+       console-baud-rate     19200
        no on-demand enable
        on-demand idle-timeout 10
        vbond validator.sdwan.local port 12346
       !
+      banner login \x03Un authorised Logins tracked\x03
+      banner motd \x03Restricted Use\x03
       service timestamps debug datetime msec
       service timestamps log datetime msec
       service tcp-keepalives-in
@@ -1754,25 +1856,34 @@ nodes:
       no service udp-small-servers
       platform console serial
       hostname Edge2
-      username admin privilege 15 secret 9 $9$uDcTBmcLjNPQCP$cHozy/gpd7BiewFw4y4uFg3upRbdSKGZ97oDm8czZ.I
+      username admin privilege 15 secret 9 $9$3V6L3V6L2VUI2k$ysPnXOdg8RLj9KgMdmfHdSHkdaMmiHzGaUpcqH6pfTo
       vrf definition 1
-       description VPN 1
+       rd 1:1
        address-family ipv4
+        route-target export 1:1
+        route-target import 1:1
         exit-address-family
        !
        address-family ipv6
         exit-address-family
        !
       !
-      global-address-family ipv4
-       exit-global-af
+      vrf definition Mgmt-intf
+       description Management
+       rd          1:512
+       address-family ipv4
+        route-target export 1:512
+        route-target import 1:512
+        exit-address-family
+       !
+       address-family ipv6
+        exit-address-family
+       !
       !
       ip arp proxy disable
       no ip finger
       no ip rcmd rcp-enable
       no ip rcmd rsh-enable
-      ip cef load-sharing algorithm include-ports source destination
-      no ip domain lookup
       ip dhcp excluded-address vrf 1 192.168.2.1
       ip dhcp pool vrf-1-GigabitEthernet3
        vrf 1
@@ -1792,6 +1903,7 @@ nodes:
       ip route 0.0.0.0 0.0.0.0 172.16.2.254
       ip scp server enable
       ip bootp server
+      no ip source-route
       no ip ssh bulk-mode
       ip tcp RST-count 10 RST-window 5000
       no ip http server
@@ -1799,10 +1911,8 @@ nodes:
       ip nat inside source list nat-dia-vpn-hop-access-list interface GigabitEthernet1 overload
       ip nat translation tcp-timeout 3600
       ip nat translation udp-timeout 60
-      ip nat route vrf 1 0.0.0.0 0.0.0.0 global
       ip nat settings central-policy
       ipv6 unicast-routing
-      ipv6 cef load-sharing algorithm include-ports source destination
       ipv6 rip vrf-mode enable
       cdp run
       interface GigabitEthernet1
@@ -1877,6 +1987,7 @@ nodes:
       !
       clock timezone UTC 0 0
       logging persistent size 104857600 filesize 10485760
+      no logging monitor
       logging buffered 512000
       logging console
       no logging queue-limit
@@ -1894,7 +2005,7 @@ nodes:
        stopbits 1
       !
       line con 0
-       speed    9600
+       speed    19200
        stopbits 1
       !
       line vty 0 4
@@ -1942,10 +2053,15 @@ nodes:
          encapsulation ipsec weight 1
          no border
          color mpls restrict
+         no last-resort-circuit
          no low-bandwidth-link
          no vbond-as-stun-server
          vmanage-connection-preference 5
          port-hop
+         carrier                       default
+         nat-refresh-interval          5
+         hello-interval                1000
+         hello-tolerance               12
          no allow-service all
          no allow-service bgp
          allow-service dhcp
@@ -1966,8 +2082,6 @@ nodes:
         no dreopt enable
         no httpopt enable
        !
-       ip load-sharing algorithm ip-and-ports
-       ipv6 load-sharing algorithm ip-and-ports
        omp
         no shutdown
         send-path-limit  4
@@ -1981,20 +2095,36 @@ nodes:
          eor-timer              300
         exit
         address-family ipv4 vrf 1
-        !
-        address-family ipv4
          advertise connected
          advertise static
-         distance 251
+        !
+        address-family ipv4
+         advertise bgp
+         advertise connected
+         advertise static
         !
         address-family ipv6
-         distance 251
+         advertise bgp
+         advertise connected
+         advertise static
         !
        !
       !
+      bfd color lte
+       hello-interval 1000
+       no pmtu-discovery
+       multiplier     1
+      !
       bfd default-dscp 48
-      bfd app-route multiplier 6
-      bfd app-route poll-interval 600000
+      bfd app-route multiplier 2
+      bfd app-route poll-interval 123400
+      security
+       ipsec
+        rekey          86400
+        replay-window  512
+        integrity-type ip-udp-esp esp
+       !
+      !
       sslproxy
        no enable
        rsa-key-modulus      2048
@@ -2146,8 +2276,8 @@ nodes:
        system-ip             10.0.0.3
        overlay-id            1
        site-id               3
-       ipv6-strict-control   false
-       port-offset           0
+       no transport-gateway enable
+       port-offset           1
        control-session-pps   300
        admin-tech-on-failure
        sp-organization-name  cml-sdwan-lab-tool
@@ -2155,11 +2285,13 @@ nodes:
        port-hop
        track-transport
        track-default-gateway
-       console-baud-rate     9600
+       console-baud-rate     19200
        no on-demand enable
        on-demand idle-timeout 10
        vbond validator.sdwan.local port 12346
       !
+      banner login \x03Un authorised Logins tracked\x03
+      banner motd \x03Restricted Use\x03
       service timestamps debug datetime msec
       service timestamps log datetime msec
       service tcp-keepalives-in
@@ -2167,45 +2299,46 @@ nodes:
       no service tcp-small-servers
       no service udp-small-servers
       platform console serial
-      hostname Edge3
-      username admin privilege 15 secret 9 $9$XX1hfdk3LbmsDD$Or1XVt2OGcl7eYtK0u1QURV9r2ad7kdEQrGtpAGbY4.
+      hostname HUB
+      username admin privilege 15 secret 9 $9$3V6L3V6L2VUI2k$ysPnXOdg8RLj9KgMdmfHdSHkdaMmiHzGaUpcqH6pfTo
       vrf definition 1
-       description VPN 1
+       rd 1:1
        address-family ipv4
+        route-target export 1:1
+        route-target import 1:1
         exit-address-family
        !
        address-family ipv6
         exit-address-family
        !
       !
-      global-address-family ipv4
-       exit-global-af
+      vrf definition Mgmt-intf
+       description Management
+       rd          1:512
+       address-family ipv4
+        route-target export 1:512
+        route-target import 1:512
+        exit-address-family
+       !
+       address-family ipv6
+        exit-address-family
+       !
       !
       ip arp proxy disable
       no ip finger
       no ip rcmd rcp-enable
       no ip rcmd rsh-enable
-      ip cef load-sharing algorithm include-ports source destination
-      no ip domain lookup
-      ip dhcp excluded-address vrf 1 192.168.3.1
-      ip dhcp pool vrf-1-GigabitEthernet3
-       vrf 1
-       lease 1 0 0
-       default-router 192.168.3.1
-       dns-server 172.16.1.254 1.1.1.1
-       network 192.168.3.0 255.255.255.0
-      exit
-      ip dhcp use hardware-address client-id
       no ip dhcp use class
-      ip dhcp use vrf remote
       ip forward-protocol nd
       no ip ftp passive
       ip name-server 172.16.1.254 172.16.2.254
       ip name-server vrf 1 172.16.1.254 1.1.1.1
       ip route 0.0.0.0 0.0.0.0 172.16.1.254
       ip route 0.0.0.0 0.0.0.0 172.16.2.254
+      ip route vrf 1 0.0.0.0 0.0.0.0 Null0
       ip scp server enable
       ip bootp server
+      no ip source-route
       no ip ssh bulk-mode
       ip tcp RST-count 10 RST-window 5000
       no ip http server
@@ -2213,10 +2346,8 @@ nodes:
       ip nat inside source list nat-dia-vpn-hop-access-list interface GigabitEthernet1 overload
       ip nat translation tcp-timeout 3600
       ip nat translation udp-timeout 60
-      ip nat route vrf 1 0.0.0.0 0.0.0.0 global
       ip nat settings central-policy
       ipv6 unicast-routing
-      ipv6 cef load-sharing algorithm include-ports source destination
       ipv6 rip vrf-mode enable
       cdp run
       interface GigabitEthernet1
@@ -2266,7 +2397,8 @@ nodes:
       interface GigabitEthernet7
        no shutdown
       exit
-      interface GigabitEthernet8
+
+      *May 28 09:04:23.783: %DMI-5-AUTH_PASSED: R0/0: dmiauthd: User 'vmanage-admin' authenticated successfully from 100.0.0.1:51778  for netconf over ssh. External groups:interface GigabitEthernet8
        no shutdown
       exit
       interface Tunnel1
@@ -2291,6 +2423,7 @@ nodes:
       !
       clock timezone UTC 0 0
       logging persistent size 104857600 filesize 10485760
+      no logging monitor
       logging buffered 512000
       logging console
       no logging queue-limit
@@ -2308,7 +2441,7 @@ nodes:
        stopbits 1
       !
       line con 0
-       speed    9600
+       speed    19200
        stopbits 1
       !
       line vty 0 4
@@ -2356,10 +2489,15 @@ nodes:
          encapsulation ipsec weight 1
          no border
          color mpls restrict
+         no last-resort-circuit
          no low-bandwidth-link
          no vbond-as-stun-server
          vmanage-connection-preference 5
          port-hop
+         carrier                       default
+         nat-refresh-interval          5
+         hello-interval                1000
+         hello-tolerance               12
          no allow-service all
          no allow-service bgp
          allow-service dhcp
@@ -2380,8 +2518,6 @@ nodes:
         no dreopt enable
         no httpopt enable
        !
-       ip load-sharing algorithm ip-and-ports
-       ipv6 load-sharing algorithm ip-and-ports
        omp
         no shutdown
         send-path-limit  4
@@ -2395,20 +2531,36 @@ nodes:
          eor-timer              300
         exit
         address-family ipv4 vrf 1
-        !
-        address-family ipv4
          advertise connected
          advertise static
-         distance 251
+        !
+        address-family ipv4
+         advertise bgp
+         advertise connected
+         advertise static
         !
         address-family ipv6
-         distance 251
+         advertise bgp
+         advertise connected
+         advertise static
         !
        !
       !
+      bfd color lte
+       hello-interval 1000
+       no pmtu-discovery
+       multiplier     1
+      !
       bfd default-dscp 48
-      bfd app-route multiplier 6
-      bfd app-route poll-interval 600000
+      bfd app-route multiplier 2
+      bfd app-route poll-interval 123400
+      security
+       ipsec
+        rekey          86400
+        replay-window  512
+        integrity-type ip-udp-esp esp
+       !
+      !
       sslproxy
        no enable
        rsa-key-modulus      2048

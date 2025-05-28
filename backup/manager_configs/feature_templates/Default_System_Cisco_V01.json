@@ -242,7 +242,7 @@
     }
   },
   "configType": "xml",
-  "attachedMastersCount": 11,
+  "attachedMastersCount": 12,
   "templateId": "68463028-b9c5-4e63-a14d-51422b03cc3f",
   "createdOn": 1748399092362,
   "@rid": 2370,
@@ -250,7 +250,7 @@
   "feature": "vmanage-default",
   "createdBy": "system",
   "templateName": "Default_System_Cisco_V01",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Factory Default template for System Cisco",
   "tenantId": "default",
   "lastUpdatedOn": 1748399092362

@@ -1,0 +1,14 @@
+[
+  {
+    "host-name": "HUB",
+    "deviceIP": "10.0.0.3",
+    "local-system-ip": "10.0.0.3",
+    "site-id": "3",
+    "device-groups": [
+      "No groups"
+    ],
+    "uuid": "C8K-27148AFE-7160-69D3-ACC5-F77560530D63",
+    "personality": "vedge",
+    "configCloudxMode": "none"
+  }
+]

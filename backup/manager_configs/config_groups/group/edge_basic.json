@@ -4,8 +4,8 @@
   "description": "Do not modify!",
   "source": null,
   "solution": "sdwan",
-  "lastUpdatedBy": "sdwan",
-  "lastUpdatedOn": 1748399353740,
+  "lastUpdatedBy": "admin",
+  "lastUpdatedOn": 1748415862178,
   "createdBy": null,
   "createdOn": null,
   "profiles": [
@@ -27,8 +27,8 @@
       "solution": "sdwan",
       "type": "system",
       "description": null,
-      "lastUpdatedBy": "sdwan",
-      "lastUpdatedOn": 1748399356609,
+      "lastUpdatedBy": "admin",
+      "lastUpdatedOn": 1748416258350,
       "createdBy": "sdwan",
       "createdOn": 1748399294024,
       "profileParcelCount": 6
@@ -70,15 +70,11 @@
       "profileParcelCount": 1
     }
   ],
-  "version": 2,
+  "version": 3,
   "state": null,
-  "devices": [
-    "C8K-3D1A8960-6E76-532C-DA93-50626FC5797E",
-    "C8K-D4CE7174-5261-7E6F-91EA-4926BCF4C2DD",
-    "C8K-27148AFE-7160-69D3-ACC5-F77560530D63"
-  ],
-  "numberOfDevices": 3,
-  "numberOfDevicesUpToDate": 3,
+  "devices": [],
+  "numberOfDevices": 0,
+  "numberOfDevicesUpToDate": 0,
   "origin": null,
   "topology": null,
   "fullConfigCli": false

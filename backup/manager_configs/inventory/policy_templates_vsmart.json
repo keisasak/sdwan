@@ -1,0 +1,62 @@
+[
+  {
+    "lastUpdatedBy": "admin",
+    "policyVersion": "05282025T082902872",
+    "policyName": "hub_and_spoke_policy_v3",
+    "policyDefinition": "{\"assembly\":[{\"definitionId\":\"30e8952e-bad3-4710-ae59-da582aefe394\",\"type\":\"control\",\"entries\":[{\"direction\":\"out\",\"siteLists\":[\"7a138780-fd46-4c1c-805b-d3c8111aaf8f\"]}]}],\"regionRoleAssembly\":[]}",
+    "createdOn": 1748421287958,
+    "isPolicyActivated": false,
+    "policyDescription": "hub_and_spoke_policy_v3",
+    "@rid": 2740,
+    "policyId": "5130ee5b-1ee1-45cd-873c-d21df4f9001f",
+    "createdBy": "admin",
+    "policyType": "feature",
+    "tenantId": "default",
+    "lastUpdatedOn": 1748421287958
+  },
+  {
+    "lastUpdatedBy": "admin",
+    "policyVersion": "05282025T053126708",
+    "policyName": "hub_and_spoke_policy",
+    "policyDefinition": "{\"assembly\":[{\"definitionId\":\"8d9acb9d-ddf3-4d88-941d-a92a6be8b51d\",\"type\":\"control\",\"entries\":[{\"direction\":\"out\",\"siteLists\":[\"7a138780-fd46-4c1c-805b-d3c8111aaf8f\"]}]}],\"regionRoleAssembly\":[]}",
+    "createdOn": 1748410286708,
+    "isPolicyActivated": false,
+    "policyDescription": "hub_and_spoke_policy",
+    "@rid": 3105,
+    "policyId": "1a5c0117-80d6-4212-ac8c-8afd2e69e82d",
+    "createdBy": "admin",
+    "policyType": "feature",
+    "tenantId": "default",
+    "lastUpdatedOn": 1748410286708
+  },
+  {
+    "lastUpdatedBy": "admin",
+    "policyVersion": "05282025T053621964",
+    "policyName": "hub_and_spoke_policy_v2",
+    "policyDefinition": "{\"assembly\":[{\"definitionId\":\"324447ac-e661-470b-997f-5adb0f416a69\",\"type\":\"control\",\"entries\":[{\"direction\":\"out\",\"siteLists\":[\"7a138780-fd46-4c1c-805b-d3c8111aaf8f\"]}]}],\"regionRoleAssembly\":[]}",
+    "createdOn": 1748410948472,
+    "isPolicyActivated": false,
+    "policyDescription": "hub_and_spoke_policy_v2",
+    "@rid": 3132,
+    "policyId": "2a7d7cbf-b67b-4be9-ab86-e4b14aaf2961",
+    "createdBy": "admin",
+    "policyType": "feature",
+    "tenantId": "default",
+    "lastUpdatedOn": 1748410948472
+  },
+  {
+    "lastUpdatedBy": "admin",
+    "policyVersion": "05282025T085159385",
+    "policyName": "hub_and_spoke_policy_v4",
+    "policyDefinition": "{\"assembly\":[{\"definitionId\":\"345664a9-0a04-409d-87fe-69caf0398184\",\"type\":\"control\",\"entries\":[{\"direction\":\"out\",\"siteLists\":[\"7a138780-fd46-4c1c-805b-d3c8111aaf8f\"]}]}],\"regionRoleAssembly\":[]}",
+    "createdOn": 1748422526761,
+    "isPolicyActivated": true,
+    "policyDescription": "hub_and_spoke_policy_v4",
+    "@rid": 3192,
+    "policyId": "58f7c7a2-c4b2-4166-9069-d3ab8eed2c80",
+    "createdBy": "admin",
+    "policyType": "feature",
+    "tenantId": "default",
+    "lastUpdatedOn": 1748422526761
+  }
+]

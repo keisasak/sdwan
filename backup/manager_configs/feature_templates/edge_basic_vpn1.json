@@ -4,7 +4,7 @@
     "vedge-C8000V"
   ],
   "templateMinVersion": "15.0.0",
-  "lastUpdatedBy": "sdwan",
+  "lastUpdatedBy": "admin",
   "editedTemplateDefinition": {
     "vpn-id": {
       "vipObjectType": "object",
@@ -176,32 +176,6 @@
       ]
     },
     "ip": {
-      "route": {
-        "vipType": "constant",
-        "vipValue": [
-          {
-            "prefix": {
-              "vipObjectType": "object",
-              "vipType": "constant",
-              "vipValue": "0.0.0.0/0",
-              "vipVariableName": "vpn_ipv4_ip_prefix"
-            },
-            "vpn": {
-              "vipType": "constant",
-              "vipObjectType": "object",
-              "vipValue": 0
-            },
-            "priority-order": [
-              "prefix",
-              "vpn"
-            ]
-          }
-        ],
-        "vipObjectType": "tree",
-        "vipPrimaryKey": [
-          "prefix"
-        ]
-      },
       "gre-route": {},
       "ipsec-route": {},
       "service-route": {}
@@ -223,7 +197,8 @@
             },
             "route-policy": {
               "vipType": "ignore",
-              "vipObjectType": "object"
+              "vipObjectType": "object",
+              "vipVariableName": "bgp_redistribute_route_policy_0"
             }
           },
           {
@@ -238,7 +213,8 @@
             },
             "route-policy": {
               "vipType": "ignore",
-              "vipObjectType": "object"
+              "vipObjectType": "object",
+              "vipVariableName": "bgp_redistribute_route_policy_1"
             }
           }
         ],
@@ -429,32 +405,6 @@
       ]
     },
     "ip": {
-      "route": {
-        "vipType": "constant",
-        "vipValue": [
-          {
-            "prefix": {
-              "vipObjectType": "object",
-              "vipType": "constant",
-              "vipValue": "0.0.0.0/0",
-              "vipVariableName": "vpn_ipv4_ip_prefix"
-            },
-            "vpn": {
-              "vipType": "constant",
-              "vipObjectType": "object",
-              "vipValue": 0
-            },
-            "priority-order": [
-              "prefix",
-              "vpn"
-            ]
-          }
-        ],
-        "vipObjectType": "tree",
-        "vipPrimaryKey": [
-          "prefix"
-        ]
-      },
       "gre-route": {},
       "ipsec-route": {},
       "service-route": {}
@@ -476,7 +426,8 @@
             },
             "route-policy": {
               "vipType": "ignore",
-              "vipObjectType": "object"
+              "vipObjectType": "object",
+              "vipVariableName": "bgp_redistribute_route_policy_0"
             }
           },
           {
@@ -491,7 +442,8 @@
             },
             "route-policy": {
               "vipType": "ignore",
-              "vipObjectType": "object"
+              "vipObjectType": "object",
+              "vipVariableName": "bgp_redistribute_route_policy_1"
             }
           }
         ],
@@ -510,8 +462,8 @@
       }
     }
   },
-  "configType": "xml",
   "attachedMastersCount": 1,
+  "configType": "xml",
   "templateId": "3ec19011-ea81-4d2c-b4d8-7b39b0066d67",
   "createdOn": 1748399284079,
   "@rid": 2704,
@@ -519,8 +471,8 @@
   "feature": "vmanage-default",
   "createdBy": "sdwan",
   "templateName": "edge_basic_vpn1",
-  "devicesAttached": 0,
+  "devicesAttached": 2,
   "templateDescription": "Do not modify!",
   "tenantId": "default",
-  "lastUpdatedOn": 1748399284079
+  "lastUpdatedOn": 1748413017083
 }

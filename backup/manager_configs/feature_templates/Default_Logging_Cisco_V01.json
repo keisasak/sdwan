@@ -84,7 +84,7 @@
     }
   },
   "configType": "xml",
-  "attachedMastersCount": 16,
+  "attachedMastersCount": 17,
   "templateId": "eb80254f-419e-45c4-a4cf-3aa926f4e73a",
   "createdOn": 1748399084436,
   "@rid": 1970,
@@ -92,7 +92,7 @@
   "feature": "vmanage-default",
   "createdBy": "system",
   "templateName": "Default_Logging_Cisco_V01",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Factory Default template for Logging Cisco",
   "tenantId": "default",
   "lastUpdatedOn": 1748399084436

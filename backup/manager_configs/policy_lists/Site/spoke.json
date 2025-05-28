@@ -1,0 +1,42 @@
+{
+  "listId": "7a138780-fd46-4c1c-805b-d3c8111aaf8f",
+  "name": "spoke",
+  "type": "site",
+  "description": "Desc Not Required",
+  "entries": [
+    {
+      "siteId": "1"
+    },
+    {
+      "siteId": "2"
+    }
+  ],
+  "lastUpdated": 1748409705270,
+  "owner": "admin",
+  "readOnly": false,
+  "version": "0",
+  "infoTag": "",
+  "referenceCount": 4,
+  "references": [
+    {
+      "id": "58f7c7a2-c4b2-4166-9069-d3ab8eed2c80",
+      "type": ""
+    },
+    {
+      "id": "5130ee5b-1ee1-45cd-873c-d21df4f9001f",
+      "type": ""
+    },
+    {
+      "id": "2a7d7cbf-b67b-4be9-ab86-e4b14aaf2961",
+      "type": ""
+    },
+    {
+      "id": "1a5c0117-80d6-4212-ac8c-8afd2e69e82d",
+      "type": ""
+    }
+  ],
+  "activatedId": [
+    "58f7c7a2-c4b2-4166-9069-d3ab8eed2c80"
+  ],
+  "isActivatedByVsmart": true
+}

@@ -1,6 +1,6 @@
 {
   "profileName": "edge_basic_system",
-  "lastUpdatedBy": "sdwan",
+  "lastUpdatedBy": "admin",
   "description": "Do not modify!",
   "profileParcelCount": 6,
   "createdOn": 1748399294024,
@@ -10,7 +10,7 @@
   "createdBy": "sdwan",
   "profileId": "66de75dd-1afc-48cc-b18a-45ffd1f3cdf5",
   "tenantId": "default",
-  "lastUpdatedOn": 1748399810047,
+  "lastUpdatedOn": 1748416258350,
   "associatedProfileParcels": [
     {
       "parcelId": "4e6e6eb2-0577-44af-a900-864b71a981a0",

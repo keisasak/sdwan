@@ -265,7 +265,7 @@
     "templateId": "2c340d3f-d1cf-4082-9fa2-c58370bfbcc0",
     "factoryDefault": false,
     "templateName": "edge_basic",
-    "devicesAttached": 0,
+    "devicesAttached": 2,
     "templateDescription": "Do not modify!",
     "lastUpdatedOn": 1748399287496,
     "templateAttached": 16,
@@ -286,5 +286,21 @@
     "lastUpdatedOn": 1748399288848,
     "templateAttached": 8,
     "draftMode": "Disabled"
+  },
+  {
+    "deviceType": "vedge-C8000V",
+    "lastUpdatedBy": "admin",
+    "resourceGroup": "global",
+    "deviceRole": "sdwan-edge",
+    "templateClass": "cedge",
+    "configType": "template",
+    "templateId": "c7be22ca-f207-4faf-80a3-268f1c9bd39d",
+    "factoryDefault": false,
+    "templateName": "hub_basic",
+    "devicesAttached": 1,
+    "templateDescription": "Do not modify!",
+    "draftMode": "Disabled",
+    "lastUpdatedOn": 1748409009458,
+    "templateAttached": 15
   }
 ]

@@ -151,7 +151,7 @@
   "feature": "vmanage-default",
   "createdBy": "sdwan",
   "templateName": "edge_basic_vpn1_gi3_dhcp",
-  "devicesAttached": 0,
+  "devicesAttached": 2,
   "templateDescription": "Do not modify!",
   "tenantId": "default",
   "lastUpdatedOn": 1748399284367

@@ -359,8 +359,8 @@
       "vipVariableName": "server_auth_order"
     }
   },
+  "attachedMastersCount": 18,
   "configType": "xml",
-  "attachedMastersCount": 17,
   "templateId": "9476a32c-7204-4537-aed5-9fd8a748e4ea",
   "createdOn": 1748399111696,
   "@rid": 2443,
@@ -368,7 +368,7 @@
   "feature": "vmanage-default",
   "createdBy": "system",
   "templateName": "Factory_Default_AAA_CISCO_Template",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Default AAA CISCO template settings",
   "tenantId": "default",
   "lastUpdatedOn": 1748399111696

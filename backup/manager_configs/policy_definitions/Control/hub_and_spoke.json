@@ -1,0 +1,44 @@
+{
+  "definitionId": "8d9acb9d-ddf3-4d88-941d-a92a6be8b51d",
+  "name": "hub_and_spoke",
+  "type": "control",
+  "description": "hub_and_spoke",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceName": "TLOC",
+      "baseAction": "accept",
+      "sequenceType": "tloc",
+      "sequenceIpType": "ipv4",
+      "match": {
+        "entries": [
+          {
+            "field": "tloc",
+            "value": {
+              "ip": "10.0.0.3",
+              "color": "biz-internet",
+              "encap": "ipsec"
+            }
+          }
+        ]
+      },
+      "actions": []
+    }
+  ],
+  "defaultAction": {
+    "type": "reject"
+  },
+  "lastUpdated": 1748409658101,
+  "owner": "admin",
+  "infoTag": "",
+  "mode": "",
+  "optimized": "false",
+  "referenceCount": 1,
+  "references": [
+    {
+      "id": "1a5c0117-80d6-4212-ac8c-8afd2e69e82d",
+      "property": "policyId"
+    }
+  ],
+  "isActivatedByVsmart": false
+}

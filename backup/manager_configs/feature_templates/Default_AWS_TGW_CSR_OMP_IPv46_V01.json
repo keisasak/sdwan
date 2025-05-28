@@ -277,8 +277,8 @@
       ]
     }
   },
+  "attachedMastersCount": 7,
   "configType": "xml",
-  "attachedMastersCount": 6,
   "templateId": "460bf911-7e7c-4446-bf47-22663a2836b0",
   "createdOn": 1748399113110,
   "@rid": 2448,
@@ -286,7 +286,7 @@
   "feature": "vmanage-default",
   "createdBy": "system",
   "templateName": "Default_AWS_TGW_CSR_OMP_IPv46_V01",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Default OMP template for AWS Transit Gateway CSR",
   "tenantId": "default",
   "lastUpdatedOn": 1748399113110

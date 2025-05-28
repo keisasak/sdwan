@@ -535,7 +535,7 @@
     }
   },
   "configType": "xml",
-  "attachedMastersCount": 1,
+  "attachedMastersCount": 2,
   "templateId": "c006eecf-2768-4c48-927d-2c6917a041f5",
   "createdOn": 1748399284652,
   "@rid": 2706,
@@ -543,7 +543,7 @@
   "feature": "vmanage-default",
   "createdBy": "sdwan",
   "templateName": "edge_basic_vpn1_gi3_lan",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Do not modify!",
   "tenantId": "default",
   "lastUpdatedOn": 1748399284652

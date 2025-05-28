@@ -1,0 +1,40 @@
+[
+  {
+    "listId": "7a138780-fd46-4c1c-805b-d3c8111aaf8f",
+    "name": "spoke",
+    "type": "site",
+    "description": "Desc Not Required",
+    "entries": [
+      {
+        "siteId": "1"
+      },
+      {
+        "siteId": "2"
+      }
+    ],
+    "lastUpdated": 1748409705270,
+    "owner": "admin",
+    "readOnly": false,
+    "version": "0",
+    "infoTag": "",
+    "referenceCount": 4,
+    "references": [
+      {
+        "id": "",
+        "type": ""
+      },
+      {
+        "id": "",
+        "type": ""
+      },
+      {
+        "id": "",
+        "type": ""
+      },
+      {
+        "id": "",
+        "type": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "policyDefinition": {
+    "assembly": [
+      {
+        "definitionId": "324447ac-e661-470b-997f-5adb0f416a69",
+        "type": "control",
+        "entries": [
+          {
+            "direction": "out",
+            "siteLists": [
+              "7a138780-fd46-4c1c-805b-d3c8111aaf8f"
+            ]
+          }
+        ]
+      }
+    ],
+    "regionRoleAssembly": []
+  },
+  "policyType": "feature",
+  "policyName": "hub_and_spoke_policy_v2",
+  "policyDescription": "hub_and_spoke_policy_v2",
+  "isPolicyActivated": false
+}

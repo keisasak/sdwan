@@ -1,0 +1,60 @@
+{
+  "definitionId": "30e8952e-bad3-4710-ae59-da582aefe394",
+  "name": "hub_and_spoke_v3",
+  "type": "control",
+  "description": "hub_and_spoke_v3",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceName": "TLOC",
+      "baseAction": "accept",
+      "sequenceType": "tloc",
+      "sequenceIpType": "ipv4",
+      "match": {
+        "entries": [
+          {
+            "field": "tloc",
+            "value": {
+              "ip": "10.0.0.3",
+              "color": "biz-internet",
+              "encap": "ipsec"
+            }
+          }
+        ]
+      },
+      "actions": []
+    },
+    {
+      "sequenceId": 11,
+      "sequenceName": "Route",
+      "baseAction": "accept",
+      "sequenceType": "route",
+      "sequenceIpType": "ipv4",
+      "match": {
+        "entries": [
+          {
+            "field": "prefixList",
+            "ref": "36012be9-2d54-44d4-b2d5-bd368b44bf89"
+          }
+        ]
+      },
+      "actions": []
+    }
+  ],
+  "defaultAction": {
+    "type": "reject"
+  },
+  "lastUpdated": 1748421118261,
+  "owner": "admin",
+  "infoTag": "",
+  "mode": "",
+  "optimized": "false",
+  "referenceCount": 1,
+  "references": [
+    {
+      "id": "5130ee5b-1ee1-45cd-873c-d21df4f9001f",
+      "property": "policyId"
+    }
+  ],
+  "isActivatedByVsmart": false
+}

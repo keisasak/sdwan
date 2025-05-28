@@ -124,7 +124,7 @@
     }
   },
   "configType": "xml",
-  "attachedMastersCount": 14,
+  "attachedMastersCount": 15,
   "templateId": "9470dc83-e2b6-4d90-95e6-3ed373005592",
   "createdOn": 1748399101266,
   "@rid": 2402,
@@ -132,7 +132,7 @@
   "feature": "vmanage-default",
   "createdBy": "system",
   "templateName": "Default_BFD_Cisco_V01",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Factory Default template for BFD Cisco",
   "tenantId": "default",
   "lastUpdatedOn": 1748399101266

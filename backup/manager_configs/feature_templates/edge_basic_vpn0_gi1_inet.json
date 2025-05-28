@@ -1081,7 +1081,7 @@
     }
   },
   "configType": "xml",
-  "attachedMastersCount": 1,
+  "attachedMastersCount": 2,
   "templateId": "3eac527a-4cbf-4a5f-9aa5-ef93dab1ce1c",
   "createdOn": 1748399283503,
   "@rid": 2702,
@@ -1089,7 +1089,7 @@
   "feature": "vmanage-default",
   "createdBy": "sdwan",
   "templateName": "edge_basic_vpn0_gi1_inet",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Do not modify!",
   "tenantId": "default",
   "lastUpdatedOn": 1748399283503

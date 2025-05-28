@@ -34,8 +34,8 @@
       "vipVariableName": "banner_motd"
     }
   },
+  "attachedMastersCount": 5,
   "configType": "xml",
-  "attachedMastersCount": 4,
   "templateId": "f8c110bf-fa97-49f0-9e17-d5cffe7d2cf2",
   "createdOn": 1748399109678,
   "@rid": 2435,
@@ -43,7 +43,7 @@
   "feature": "vmanage-default",
   "createdBy": "system",
   "templateName": "Factory_Default_Retail_Banner",
-  "devicesAttached": 0,
+  "devicesAttached": 3,
   "templateDescription": "Factory Default Retail Banner",
   "tenantId": "default",
   "lastUpdatedOn": 1748399109678
